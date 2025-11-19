@@ -231,6 +231,102 @@ Unlike venture capital or loans, government grants:
   - Strategic Reserve Fund: $100K-$500K
   - Focus on traded sector industries
 
+## Grant Application Process Flows (Visual Guides)
+
+### Overall Federal Grant Application Journey
+
+```mermaid
+graph TD
+    A["Start: Company Registration"] --> B["Register SAM.gov<br/>2-4 weeks"]
+    B --> C["Get UEI Number"]
+    C --> D["Create Grants.gov Account"]
+    D --> E["Identify Grant Opportunities<br/>50+ candidates"]
+    E --> F{"Eligibility<br/>Check"}
+    F -->|Not Eligible| G["Choose Other Programs"]
+    F -->|Eligible| H["Contact Program Officer<br/>Pre-application call"]
+    H --> I["Develop Concept Paper<br/>2 pages"]
+    I --> J["Get Informal Feedback<br/>from Program Officer"]
+    J --> K{"Proceed to<br/>Full Application?"}
+    K -->|No| L["Refocus & Reapply<br/>Next Cycle"]
+    K -->|Yes| M["Write Full Proposal<br/>80-120 hours"]
+    M --> N["External Review<br/>Industry experts"]
+    N --> O["Compliance Check<br/>All requirements met"]
+    O --> P["Submit to Grants.gov<br/>48 hours early"]
+    P --> Q["Confirmation Received<br/>& Saved"]
+    Q --> R["Wait for Review<br/>3-6 months"]
+    R --> S{"Award<br/>Decision"}
+    S -->|Rejected| T["Request Feedback<br/>& Reapply"]
+    S -->|Awarded| U["Begin Post-Award<br/>Reporting"]
+    T --> V["Revise & Strengthen<br/>Next Application"]
+    V --> E
+```
+
+### Eligibility Verification Flowchart
+
+```mermaid
+graph TD
+    A["Start: Check Eligibility"] --> B{"51%+ US Owned<br/>& Controlled?"}
+    B -->|No| C["Not Eligible<br/>for SBIR"]
+    B -->|Yes| D{"Fewer than<br/>500 Employees?"}
+    D -->|No| E["Not Eligible<br/>for SBIR"]
+    D -->|Yes| F{"Organized<br/>for Profit?"}
+    F -->|No| G["Not Eligible<br/>for SBIR"]
+    F -->|Yes| H{"Principal Investigator<br/>50%+ employed<br/>by company?"}
+    H -->|No| I["Not Eligible<br/>for SBIR"]
+    H -->|Yes| J{"Physical Location<br/>in US?"}
+    J -->|No| K["Not Eligible<br/>for Federal SBIR"]
+    J -->|Yes| L{"SAM.gov<br/>Registration<br/>Complete?"}
+    L -->|No| M["Complete SAM.gov<br/>Registration First"]
+    L -->|Yes| N["✓ SBIR Eligible<br/>Proceed to Applications"]
+```
+
+### Grant Funding Progression Path
+
+```mermaid
+graph LR
+    A["State Grants<br/>$25K-$100K<br/>3-6 months"] --> B["Build<br/>Preliminary Data"]
+    B --> C["Federal Phase I<br/>$150K-$300K<br/>6-9 months"]
+    C --> D["Generate<br/>Proof of Concept"]
+    D --> E["Federal Phase II<br/>$750K-$2M<br/>18-24 months"]
+    E --> F["Develop<br/>Full Solution"]
+    F --> G["Phase II Extensions<br/>$500K<br/>12 months"]
+    G --> H["Strengthen<br/>Commercialization"]
+    H --> I["ARPA-E/Large Programs<br/>$1M-$10M<br/>24-36 months"]
+    I --> J["Scale & Deploy<br/>Technology"]
+    J --> K["Phase III/<br/>Commercialization<br/>Procurement Contracts"]
+
+    style A fill:#e1f5ff
+    style C fill:#fff3e0
+    style E fill:#f3e5f5
+    style I fill:#e8f5e9
+    style K fill:#fce4ec
+```
+
+### Monthly Discovery & Application Timeline
+
+```mermaid
+gantt
+    title Annual Grant Application Timeline
+    dateFormat YYYY-MM-DD
+
+    section Preparation
+    SAM.gov Registration :s1, 2024-01-01, 30d
+    Build Grant List :s2, 2024-01-15, 45d
+    Create Content Library :s3, 2024-02-01, 60d
+
+    section Applications
+    Q1 Applications Due :a1, 2024-02-15, 90d
+    Q2 Applications Due :a2, 2024-05-01, 90d
+    Q3 Applications Due :a3, 2024-08-01, 90d
+    Q4 Applications Due :a4, 2024-11-01, 90d
+
+    section Reviews & Awards
+    Review Periods :r1, 2024-03-15, 120d
+    Award Notifications :r2, 2024-06-15, 120d
+    Contract Starts :r3, 2024-09-15, 120d
+    Funding Received :r4, 2024-12-15, 120d
+```
+
 ## How Top-Tier Founders Identify Opportunities
 
 ### 1. Primary Discovery Systems
@@ -454,6 +550,462 @@ Unlike venture capital or loans, government grants:
 - **Always**: Thank reviewers, maintain relationships, apply to next cycle
 
 **Deliverable**: Next steps action plan
+
+## Step-by-Step Execution Guide: First 90 Days (With Specific Sites)
+
+### Day 1-7: Registration Sprint
+
+**Day 1-2: Create Your SAM.gov Account**
+```
+Website: https://sam.gov
+Process:
+1. Click "Register" in top right
+2. Enter your company EIN (Employer Identification Number)
+3. Create account with email and password
+4. Complete business entity information
+   - Legal business name
+   - Physical address
+   - Mailing address
+   - Business type (LLC, C-Corp, S-Corp, etc.)
+5. Provide bank information (routing & account number)
+6. Appoint officials (owner, authorized signatory)
+7. Add points of contact with names, emails, phone numbers
+Status Check: Monitor email for UEI confirmation (usually 1-2 days)
+Timeline: 2-4 weeks for full SAM.gov approval
+```
+
+**Day 3-4: Get Your UEI (Unique Entity Identifier)**
+```
+Automatic: Issued when SAM.gov approves your registration
+- You'll receive UEI number via email
+- Save this number (you'll need it for everything)
+- Update all government forms with this UEI
+- Note: UEI replaced DUNS number in 2023
+```
+
+**Day 5-6: Register with Grants.gov**
+```
+Website: https://www.grants.gov
+Process:
+1. Create account with email address
+2. Confirm email address (check spam folder)
+3. Set up "Authorized Organization Representative" (AOR)
+   - You or CFO can be AOR
+   - AOR must sign all grant applications
+4. Wait for AOR approval (2-3 business days)
+5. Set up email alerts for keywords
+   - Search 20+ relevant keyword combinations
+   - Examples for AI startup:
+     * "artificial intelligence"
+     * "machine learning"
+     * "autonomous systems"
+     * "AI manufacturing"
+     * "AI healthcare"
+     * "AI defense"
+     * "deep learning"
+     * Plus industry-specific terms
+Note: Don't proceed to applications until AOR is approved
+```
+
+**Day 7: Set Up Federal Register Alerts**
+```
+Website: https://www.federalregister.gov
+Process:
+1. Click "Notifications" at top
+2. Create custom alert with search terms
+3. Select email frequency (daily recommended)
+4. Search categories: "Notices" and "Proposed Rules"
+5. Add agency-specific searches:
+   - National Science Foundation
+   - Department of Energy
+   - Department of Defense
+   - National Institutes of Health
+   - USDA
+This catches funding opportunities BEFORE they appear on Grants.gov
+```
+
+### Week 2: Target List Development
+
+**Day 8-10: Build Your 50+ Grant Opportunity List**
+```
+Primary Source: https://www.grants.gov/search-results
+Steps:
+1. Click "Advanced Search"
+2. Search by agency (start with 3-5 relevant agencies)
+3. For each agency search, apply filters:
+   - Status: "Open"
+   - Funding Opportunity Category: [Your field]
+   - Funding Instrument Type: "Grant"
+4. Download solicitation PDFs for:
+   - All "Phase I" opportunities (smaller, easier to win)
+   - All current "Phase II" opportunities
+   - Any new programs aligned with your tech
+5. Create spreadsheet with columns:
+   | Agency | Program Name | Phase | Amount | Deadline | CFDA # | Fit Score | URL |
+6. Score each grant 1-10 for fit
+7. Prioritize: Deadline within 2-4 months, Fit Score 7+
+
+Alternative/Supplemental Sources:
+- https://www.sbir.gov - Tech-focused SBIR/STTR opportunities
+- https://beta.sam.gov - Broader opportunity database
+- https://www.grantwatch.com - Paid service with daily updates
+```
+
+**Day 11-14: Research Past Winners**
+```
+Method 1: SBIR.gov Past Winner Database
+- Website: https://www.sbir.gov/awardees/past-awards
+- Search by company name, agency, or topic
+- Review what these companies proposed
+- Look for patterns in successful proposals
+
+Method 2: Government Reports
+- NSF Awards: https://nsf.gov/awardsearch
+- NIH Reporter: https://reporter.nih.gov
+- DOE Office of Scientific Information: https://www.osti.gov
+- Search your technology area
+- Download abstracts of funded projects
+- Analyze what made them successful
+
+Method 3: Direct Outreach
+- Find past winners on LinkedIn
+- Send message: "Hi [Name], I noticed you won an NSF SBIR for [project].
+  We're in a similar space and preparing our first application. Would
+  you be open to a 15-minute call about your experience?"
+- ~30% response rate
+- These conversations are gold
+
+Create Summary Document:
+- 10-20 past winner analysis
+- Common themes in their approaches
+- Market focus and team structure
+- Typical budget ranges they used
+```
+
+### Week 3: Relationship Building Sprint
+
+**Day 15-18: Program Officer Research**
+```
+For Your Top 5 Opportunities:
+
+Step 1: Find the Program Officer
+- Go to grant announcement on Grants.gov
+- Look for "Agency Contact" section
+- Usually includes email, phone, name
+- If not listed, try agency website:
+  * https://www.nsf.gov/staff/index.jsp (NSF staff directory)
+  * https://www.energy.gov (DOE directory)
+  * https://sbir.nih.gov/contact (NIH contact info)
+
+Step 2: Research the Program Officer
+- Search their LinkedIn
+- Look for their published papers on Google Scholar
+- Check if they've presented at conferences
+- Look for any Twitter/professional profiles
+- This helps you reference their work in emails
+
+Step 3: Prepare Short Profile for Each:
+Name: [Program Officer]
+Title: [Title]
+Email: [Email]
+Phone: [Phone]
+Office Hours: [If available]
+Key Interests: [Based on research]
+Recent Publications: [Links to research]
+Contact Window: [Best time to reach out]
+```
+
+**Day 19-21: Initial Outreach**
+```
+Email Template to Program Officers:
+[Use template from this guide under "Messaging Templates"]
+
+Personalization is KEY:
+- Reference something specific from THEIR work
+- Show genuine alignment (not generic)
+- Keep to 200-250 words
+- End with clear ask: "Would you have 15 minutes for a call?"
+
+Example Personalization:
+"I noticed in your 2024 NSF SBIR solicitation that you're specifically
+seeking approaches to autonomous system challenges. Our work on [specific
+approach] directly addresses [specific challenge you mentioned in
+solicitation]. Have we understood your priorities correctly?"
+
+Timeline: Send emails over 3-5 days
+- Space them out to avoid them comparing notes
+- Expect 30-50% response rate
+- Calls typically within 48 hours of positive response
+```
+
+**Day 22-28: Exploratory Calls**
+```
+Scheduling:
+- Book calls for 15-20 minutes
+- Offer 3-4 time options
+- Usually scheduled within 48 hours
+
+Call Preparation:
+- Have your proposal concept ready (1-2 page summary)
+- Make 3 specific questions to ask:
+  1. "Does our approach align with your current priorities?"
+  2. "What do winning proposals in this area typically look like?"
+  3. "Are there other programs you'd recommend exploring?"
+- Have their published papers open
+- Note any new requirements they mention
+- Get their timeline for solicitation (if not yet released)
+
+During Call (15 minutes):
+- Introduce: 1 minute
+- Pitch: 2 minutes (your problem, solution, impact)
+- Questions: 5 minutes
+- Ask for feedback: 3 minutes
+- Close: 1 minute ("Thank you, next steps...")
+
+Post-Call:
+- Send thank you email within 1 hour
+- Reference specific feedback they gave
+- Include updated concept paper addressing their feedback
+- Set reminder for 2 weeks: "Follow up if no solicitation released"
+```
+
+### Week 4-6: Content Development
+
+**Day 29-35: Create Your Reusable Content Library**
+```
+Document 1: Company Overview (1 page)
+Location: Create in Google Drive/shared folder
+What to include:
+- One-line mission statement
+- Problem you're solving (with statistics)
+- Your solution (paragraph + 1 visual)
+- Team highlights
+- Current stage/traction
+- Why now? (market momentum)
+Use this for EVERY proposal (customize for each agency)
+
+Document 2: Technical Approach Template (3-5 pages)
+Include:
+- Background (what's the current state?)
+- Your innovation (what's novel?)
+- Preliminary data (proof it works)
+- Detailed technical objectives (SMART goals)
+- Methodology (how will you do it?)
+- Risk mitigation (what could go wrong, how you'll handle it)
+- Timeline with milestones
+
+Document 3: Team CVs/Bios
+Create 2-3 page CVs for:
+- CEO/Founder (highlight relevant experience)
+- CTO/Lead Technical Person
+- Other key roles
+- List: education, relevant experience, publications, patents, prior grants
+
+Document 4: Commercialization Plan (2-3 pages)
+Include:
+- Target customer (specific segments)
+- Market size (with sources, not just TAM)
+- Unit economics (pricing & cost)
+- Go-to-market strategy
+- Competition & differentiation
+- Revenue projections (3-5 years)
+- Exit potential
+
+Document 5: Letters of Support Template
+Create template with blanks for:
+- Customer/Partner letterhead
+- Specific commitments (not just "this is interesting")
+- Technical details they'll need
+- Pricing/purchase terms if applicable
+- How you'll work together
+
+Documents to Collect:
+- Articles/papers your team has published
+- Patents filed
+- News coverage
+- Product screenshots/demos
+- Prototype photos
+- Preliminary results/data charts
+- Customer testimonials
+- Anything that validates your technology
+```
+
+**Day 36-42: Create Preliminary Data Package**
+```
+Even if you're pre-product:
+- Show what you've built/tested so far
+- Include: Charts, graphs, screenshots, data tables
+- Demonstrate team capability:
+  * Previous successful projects
+  * Relevant publications
+  * Prior grant awards
+  * Industry recognition
+
+For Hardware Companies:
+- CAD renderings
+- Prototype photos
+- Performance test results
+- Materials/cost analysis
+
+For Software Companies:
+- System architecture diagrams
+- Algorithm performance benchmarks
+- User interface screenshots
+- Usage metrics (if beta testing)
+
+For Biotech/Hardware:
+- Lab results/graphs
+- Test protocols
+- Regulatory pathway analysis
+
+For Service Companies:
+- Case studies from beta customers
+- Usage data/metrics
+- Customer testimonials
+- Operational procedures
+```
+
+### Week 7-8: First Application Submission
+
+**Day 43-49: Select Your First 2-3 Applications**
+```
+Choose grants with:
+- Deadline 6-8 weeks away
+- Your fit score 8+
+- Amount you can use ($150K-$300K ideal for Phase I)
+- Agency you've contacted (program officer relationship)
+
+Create Application Work Plan:
+- Deadline minus 2 weeks: Have draft complete
+- Deadline minus 1 week: Get external reviews
+- Deadline minus 3 days: Final compliance check
+- Deadline minus 1 day: Submit
+
+For each application:
+- Download the full RFP/solicitation from Grants.gov
+- Read page-by-page (yes, all 20-40 pages)
+- Create checklist of:
+  * All required sections
+  * Page limits for each section
+  * Required attachments
+  * Required forms
+  * Formatting requirements (font, margins, etc.)
+  * Authorized signatory requirements
+```
+
+**Day 50-56: Write Your First Proposals**
+```
+Proposal Structure Template:
+1. Executive Summary (1-2 pages)
+   - Start with problem + impact
+   - Your solution in 2-3 sentences
+   - Team capability
+   - Budget ask + deliverables
+   - Timeline
+
+2. Technical Approach (5-10 pages)
+   - Background: Current state, gap, why it matters
+   - Innovation: What's novel, your advantage
+   - Preliminary Results: Proof of concept
+   - Technical Objectives: 3-5 specific, measurable goals
+   - Methodology: How you'll achieve each
+   - Timeline: Gantt chart with milestones
+   - Risk Mitigation: Problems + solutions
+
+3. Commercialization (2-5 pages)
+   - Market analysis with sources
+   - Go-to-market strategy
+   - IP/defensibility
+   - Financial projections
+   - Exit/impact potential
+
+4. Team (2 pages)
+   - Key personnel CVs
+   - Relevant experience highlights
+   - Gaps filled by consultants
+   - Advisory board
+
+5. Budget & Justification
+   - Detailed spreadsheet
+   - Narrative for each line item
+   - Compliance with spending rules
+
+Writing Tips:
+- Use exact terminology from the RFP
+- Answer every evaluation criterion explicitly
+- Include visuals every 2-3 pages
+- 30-50 citations showing field knowledge
+- Professional PDF (12pt font, 1" margins)
+- Names/titles for all team members
+```
+
+**Day 57-60: External Review & Submission**
+```
+Review Process:
+Day 57: Get external expert review
+- Industry expert in your field
+- Grant consultant (if budget allows)
+- Previous grant winner
+- Technical writer
+Get their feedback on:
+- Technical soundness
+- Clarity and persuasiveness
+- Completeness against RFP requirements
+- Competitive positioning
+
+Day 58: Revise based on feedback
+Day 59: Compliance check
+- Page limits ✓
+- All required forms ✓
+- Authorized signatory on cover ✓
+- Budget matches narrative ✓
+- All attachments included ✓
+- File naming conventions ✓
+
+Day 60: Submit
+- Upload to Grants.gov or agency portal
+- Confirm receipt within 48 hours
+- Save confirmation email/number
+- Send thank you email to program officer
+- Set calendar reminder for decision date
+```
+
+### Week 9-12: Follow-Up & Next Applications
+
+**Day 61-90: Maintain Momentum**
+```
+Post-Submission (Week 1):
+- Track submission in your spreadsheet
+- Note deadline for next similar program
+- Plan next 2-3 applications
+
+Ongoing (Weekly):
+- Check Grants.gov for new opportunities
+- Attend 1 agency webinar
+- Update your content library
+- Research 1 new past winner
+
+Ongoing (Monthly):
+- Review and score new opportunities
+- Email 2 new program officers
+- Attend networking event/LinkedIn engagement
+- Update team CVs with new accomplishments
+- Prepare concept papers for next wave
+
+If Rejected (Week 8 of waiting):
+- Request reviewer feedback
+- Schedule call with program officer
+- Ask: "What would make us competitive next time?"
+- Document feedback in your file
+- Start revising for next cycle
+
+If Awarded (Week 8 of waiting):
+- Respond within 48 hours to accept
+- Hire bookkeeper for grant accounting
+- Set up milestone tracking
+- Schedule kickoff call with program officer
+- Immediately start work on Phase II proposal
+```
 
 ## Systems & Processes
 
@@ -952,6 +1504,154 @@ Thank you again,
 - Grant track record → VC seed round (2-5x more credible)
 - Total leverage: $1M in grants often enables $5M-$10M in VC
 
+## Key Federal Agencies & Their Grant Programs (2024-2025)
+
+### Quick Reference: Which Agency for Your Technology
+
+| Your Focus | Best Fit Agency | Program | Typical Phase I | Website |
+|-----------|-----------------|---------|----------------|---------|
+| AI/ML General | NSF | SBIR | $275K | https://seedfund.nsf.gov |
+| Defense AI | DOD | Air Force SBIR | $150K-$250K | https://afwerx.com/sbir |
+| Clean Energy | DOE | SBIR | $200K | https://science.osti.gov/sbir |
+| Biotech/Medical | NIH | SBIR | $300K-$400K | https://sbir.nih.gov |
+| AgTech | USDA | SBIR | $125K | https://www.nifa.usda.gov/grants |
+| Manufacturing | Commerce | MEP | $25K-$150K | https://www.nist.gov/mep |
+| Environmental | EPA | SBIR | $100K | https://www.epa.gov/sbir |
+| Autonomy/Robotics | NSF/DOD | SBIR/DIU | $150K-$3M | Multiple |
+| Healthcare Devices | NIH | SBIR | $300K-$400K | https://sbir.nih.gov |
+| Supply Chain Tech | DOD/DOE | SBIR | $150K-$250K | Multiple |
+
+### Top 5 Federal Agencies by Total SBIR Funding (2024)
+
+**1. National Institutes of Health (NIH)**
+- Total SBIR Budget: $1.2B+ annually
+- Primary Program: NIH SBIR/STTR
+- Website: https://sbir.nih.gov
+- Focus: Biotech, medical devices, diagnostics, digital health
+- Phase I: $300K-$400K
+- Phase II: $2M-$3M
+- Deadline: April, September, December
+- Office Hours: https://sbir.nih.gov/office-hours
+
+**2. National Science Foundation (NSF)**
+- Total SBIR Budget: $200M+ annually
+- Primary Program: America's Seed Fund (SBIR/STTR)
+- Website: https://seedfund.nsf.gov
+- Focus: AI/ML, biotech, cybersecurity, semiconductors, quantum
+- Phase I: $275K
+- Phase II: $1M
+- Deadline: January, June windows
+- Office Hours: https://seedfund.nsf.gov/resources/webinars
+
+**3. Department of Defense (DOD)**
+- Total SBIR Budget: $800M+ annually
+- Primary Programs: SBIR, DIU, AFWERX, xTechSearch
+- Website: https://www.diu.mil & https://afwerx.com/sbir
+- Focus: AI, autonomy, cyber, space, advanced materials
+- Phase I: $50K-$250K
+- Phase II: $1.5M-$2M
+- Deadline: Rolling/Multiple windows
+- Resources: https://www.dodsbirsttr.mil
+
+**4. Department of Energy (DOE)**
+- Total SBIR Budget: $400M+ annually
+- Primary Program: SBIR & ARPA-E
+- Website: https://science.osti.gov/sbir
+- Focus: Clean energy, grid, advanced manufacturing
+- Phase I: $200K-$250K
+- Phase II: $1M-$2M
+- Deadline: June, December
+- Office Hours: https://science.osti.gov/sbir/Resources
+
+**5. USDA**
+- Total SBIR Budget: $100M+ annually
+- Primary Program: SBIR & Value-Added Producer Grants
+- Website: https://www.nifa.usda.gov/grants
+- Focus: AgTech, food safety, rural development
+- Phase I: $125K
+- Phase II: $600K
+- Deadline: March (check for updates)
+- USDA Portal: https://www.usda.gov/funding
+
+### State-by-State Grant Resources (Select High-Opportunity States)
+
+**California** (Largest Tech Hub)
+- **Cal Competes**: https://business.ca.gov/calcompetes-tax-credit
+- **CEC Grants**: https://www.energy.ca.gov/funding-opportunities
+- **SBIR Support**: https://www.casbdc.org/sbir
+- Main Portal: https://business.ca.gov/grants-funding
+
+**New York** (Finance & Clean Tech)
+- **NYSERDA**: https://www.nyserda.ny.gov/Funding-Opportunities
+- **Empire State Development**: https://esd.ny.gov
+- **SBIR Support**: https://www.nyssbdc.org/sbir
+- Tech Hub: https://www.dec.ny.gov/environmental-protection/air-quality/funding
+
+**Massachusetts** (Life Sciences & Innovation)
+- **MassVentures**: https://www.mass-ventures.com
+- **Mass Clean Energy Center**: https://www.masscec.com
+- **SBIR Support**: https://www.msbdc.org/sbir
+- Main Portal: https://www.mass.gov/economic-development
+
+**Texas** (Energy & Emerging Tech)
+- **Emerging Technology Fund**: https://gov.texas.gov/business/page/emerging-technology-fund
+- **Texas Enterprise Fund**: https://gov.texas.gov/business/page/texas-enterprise-fund
+- **SBIR Support**: https://www.tsbdc.org/sbir
+- Main Portal: https://gov.texas.gov/business
+
+**Colorado** (Advanced Industries)
+- **Advanced Industries Accelerator**: https://oedit.colorado.gov/advanced-industries-accelerator-grant-program
+- **SBIR Support**: https://www.sbdc.org/colorado
+- Economic Dev: https://oedit.colorado.gov
+
+**North Carolina** (Research Triangle)
+- **NC Biotech Center**: https://www.ncbiotech.org/grants
+- **Golden LEAF Foundation**: https://goldenleaffoundation.org
+- **SBIR Support**: https://www.sbtdc.org/sbir
+- Main Portal: https://www.nccommerce.com/grants
+
+**Washington** (Clean Tech & Innovation)
+- **Commerce Innovation**: https://www.commerce.wa.gov/growing-the-economy/innovation
+- **SBIR Support**: https://www.wsbdc.org/sbir
+- Grants: https://www.commerce.wa.gov/grants-resources
+
+**Illinois** (Chicago Tech Corridor)
+- **SBIR Support**: https://www.sbdc.org/illinois
+- **Tech Grants**: https://www2.illinois.gov/dceo/Pages/default.aspx
+- Grant Opportunities: https://www2.illinois.gov/dceo/Grants/Pages/default.aspx
+
+### Key Agencies by Technology Focus
+
+**For AI/ML Companies:**
+- NSF (https://seedfund.nsf.gov) - General AI/ML
+- DOD/AFWERX (https://afwerx.com/sbir) - Defense AI
+- DOE (https://science.osti.gov/sbir) - Energy AI
+- NIH (https://sbir.nih.gov) - Healthcare AI
+
+**For Hardware/Autonomy:**
+- NSF (https://seedfund.nsf.gov) - General robotics
+- DOD/DIU (https://www.diu.mil) - Defense systems
+- DOE (https://arpa-e.energy.gov) - Energy systems
+- NIST MEP (https://www.nist.gov/mep) - Manufacturing
+
+**For Biotech/Healthcare:**
+- NIH (https://sbir.nih.gov) - Largest biotech program
+- NSF (https://seedfund.nsf.gov) - Biotech innovation
+- USDA (https://www.nifa.usda.gov) - Ag biotech
+- State Programs (varies by location)
+
+**For Clean Energy/Climate:**
+- DOE (https://science.osti.gov/sbir) - Energy tech
+- DOE (https://arpa-e.energy.gov) - Breakthrough energy
+- EPA (https://www.epa.gov/sbir) - Environmental tech
+- State Energy Programs (varies)
+
+**For Advanced Manufacturing:**
+- NIST MEP (https://www.nist.gov/mep) - Manufacturing tech
+- DOD (https://afwerx.com/sbir) - Defense manufacturing
+- NSF (https://seedfund.nsf.gov) - Manufacturing innovation
+- State Programs (varies)
+
 ## Resources
 
 ### Essential Registration (Complete First):
@@ -960,34 +1660,128 @@ Thank you again,
 - **Grants.gov account**: https://www.grants.gov (FREE)
 - **State business registrations**: Contact your Secretary of State office
 
-### Key Databases & Discovery Tools:
-- **Grants.gov**: https://www.grants.gov (primary federal database)
-  - 1,000+ grant opportunities from 26 federal agencies
-  - Advanced search with keyword alerts
-  - Filter by CFDA number, deadline, amount
-- **SBIR.gov**: https://www.sbir.gov (tech-focused, see folder 10)
-  - Centralized SBIR/STTR opportunities
-  - Downloadable solicitations
-  - Past winner database
-- **Beta.SAM.gov**: https://beta.sam.gov
-  - Contract opportunities (can lead to grants)
-  - Entity registration management
-- **Federal Register**: https://www.federalregister.gov
-  - Early notice of funding opportunities
-  - Set up daily email alerts
-- **GrantWatch**: https://www.grantwatch.com ($60/month)
-  - Includes state and local grants
-  - Updated daily
-  - Category filtering
-- **Foundation Directory Online**: https://fconline.foundationcenter.org ($180/month)
-  - For government-foundation partnerships
-  - Profiles of grantmakers
-- **State Economic Development Websites** (Examples):
-  - California: https://business.ca.gov
-  - New York: https://esd.ny.gov
-  - Texas: https://gov.texas.gov/business
-  - Massachusetts: https://www.mass.gov/economic-development
-  - [Search: "your state + economic development grants"]
+### Primary Grant Databases & Discovery Tools (2024-2025)
+
+**Tier 1: Essential Federal Databases**
+- **Grants.gov** (Primary Federal Hub): https://www.grants.gov
+  - 1,000+ opportunities from 26 federal agencies
+  - Advanced search filters (agency, amount, deadline, CFDA)
+  - Email alerts for keyword combinations
+  - RFP/Solicitation downloads
+  - Workspace for application management
+  - Success tip: Set up 20+ saved searches for your keywords
+
+- **SBIR.gov** (Tech/Research Focus): https://www.sbir.gov
+  - All federal SBIR/STTR opportunities in one place
+  - Filter by agency, phase, topic, deadline
+  - Past winners database (searchable)
+  - Statistics on win rates and funding
+  - Direct links to agency submissions
+  - Office hours information for agencies
+  - Resources: https://www.sbir.gov/resources
+
+- **SBA.gov** (Small Business Administration): https://www.sba.gov
+  - Small business grants and loans
+  - State SBIR programs directory
+  - Contracting opportunities
+  - Disaster relief funding
+  - Local assistance finder: https://www.sba.gov/local-assistance/find
+
+**Tier 2: Supplementary Federal Databases**
+- **Federal Register** (Early Notifications): https://www.federalregister.gov
+  - Funding opportunity announcements 30-60 days before Grants.gov
+  - Subscribe for daily alerts by agency
+  - Search "Notice of Funding Opportunity" (NOFO)
+  - Track appropriations announcements
+  - Categories: Notices, Proposed Rules
+
+- **Beta.SAM.gov** (Broader Opportunity Search): https://beta.sam.gov
+  - Includes both grants and contracts
+  - Entity registration (mirror of SAM.gov)
+  - Opportunity search across agencies
+  - Contract vehicles that can lead to grants
+
+- **Agency-Specific Portals** (Direct from Source):
+  - NSF: https://www.nsf.gov/funding
+  - NIH: https://grants.nih.gov
+  - DOE: https://science.osti.gov/funding
+  - DOD: https://www.defense.gov/News/Releases (announcements)
+  - USDA: https://www.usda.gov/funding
+  - EPA: https://www.epa.gov/grants
+  - Commerce: https://www.commerce.gov/about/bureaus-and-offices/international-trade-administration
+
+**Tier 3: Paid Discovery Services (Optional but Recommended)**
+- **GrantWatch**: https://www.grantwatch.com ($40-60/month)
+  - Includes federal, state, and local grants
+  - Updated daily with new opportunities
+  - Category and industry filtering
+  - Email alerts for custom searches
+  - Best for: Comprehensive coverage across all levels
+
+- **Grants.com**: https://www.grants.com ($59-199/month)
+  - Large database with filters
+  - Notification system
+  - Proposal templates
+  - Best for: Small business and nonprofit focus
+
+- **GrantStation**: https://www.grantstation.com
+  - Nonprofit focus but some government grants
+  - Includes webinars and training
+  - Webinar library
+
+- **Candid/Foundation Directory**: https://www.candid.org
+  - Comprehensive grantmaker database
+  - Government and foundation matching
+  - Research tools
+  - Best for: Understanding funder landscapes
+
+**State Economic Development Portals** (By Region)
+
+*Northeast:*
+- New York: https://esd.ny.gov/funding-opportunities
+- Massachusetts: https://www.mass.gov/economic-development
+- Connecticut: https://portal.ct.gov/DECD/Business/Grants
+- Vermont: https://dec.vermont.gov/economic-development
+
+*Mid-Atlantic:*
+- Pennsylvania: https://www.newpa.com/funding-and-financing
+- New Jersey: https://nj.gov/nj/business/
+- Maryland: https://mips.tedco.md/funding
+- Delaware: https://dnrec.delaware.gov/air/funding
+
+*Southeast:*
+- North Carolina: https://www.nccommerce.com/grants
+- South Carolina: https://www.sccommerce.com
+- Georgia: https://www.georgia.org/business
+- Florida: https://www.floridadefeconomics.com
+
+*Midwest:*
+- Illinois: https://www2.illinois.gov/dceo/Grants
+- Ohio: https://development.ohio.gov/business
+- Michigan: https://www.michiganbusiness.org/funds
+- Wisconsin: https://commerce.wi.gov
+
+*Southwest:*
+- Texas: https://gov.texas.gov/business/grants
+- Arizona: https://azcommerce.com/business-development
+- New Mexico: https://www.edd.state.nm.us
+
+*Mountain:*
+- Colorado: https://oedit.colorado.gov/grants
+- Utah: https://business.utah.gov/
+- Wyoming: https://www.wyomingbusiness.org
+
+*West Coast:*
+- California: https://business.ca.gov/grants-funding
+- Washington: https://www.commerce.wa.gov/grants-resources
+- Oregon: https://www.oregon.gov/biz/Pages/index.aspx
+
+**Federal Agency Award Search Tools:**
+- NSF Award Search: https://nsf.gov/awardsearch
+- NIH Reporter: https://reporter.nih.gov
+- DOE Office of Scientific Information: https://www.osti.gov
+- DOD Award Tracker: https://www.sam.gov/SAM (search awards)
+- USDA Awards: https://www.nass.usda.gov
 
 ### Grant Writing & Consulting Services:
 - **The Grantwriters**: https://www.grantwriters.net ($5K-$25K per proposal)
@@ -998,6 +1792,77 @@ Thank you again,
   - Filter for "SBIR" or "Federal Grant" experience
   - Look for 5+ successful awards in portfolio
   - Budget $10K-$15K for a quality Phase I proposal
+
+### Quick Access Reference Guide by Task
+
+**Task: I Need to Register to Apply**
+1. Start here: https://sam.gov (create account, takes 2-4 weeks)
+2. Then: https://www.grants.gov (create Grants.gov account)
+3. Optional: https://www.sbir.gov (create account for SBIR/STTR tracking)
+
+**Task: I Need to Find Government Grants**
+1. Primary search: https://www.grants.gov/search-results
+2. Tech-focused: https://www.sbir.gov
+3. Early notice: https://www.federalregister.gov
+4. State-specific: Search "[Your State] economic development grants"
+5. Paid (optional): https://www.grantwatch.com
+
+**Task: I Need to Find Which Agencies Fund My Technology**
+1. AI/ML: Go to https://seedfund.nsf.gov OR https://afwerx.com/sbir
+2. Biotech: Go to https://sbir.nih.gov
+3. Clean Energy: Go to https://science.osti.gov/sbir
+4. AgTech: Go to https://www.nifa.usda.gov/grants
+5. Defense Tech: Go to https://www.diu.mil
+6. Manufacturing: Go to https://www.nist.gov/mep
+
+**Task: I Need to Research Past Winners**
+1. All SBIR winners: https://www.sbir.gov/awardees/past-awards
+2. NSF winners: https://nsf.gov/awardsearch
+3. NIH winners: https://reporter.nih.gov
+4. DOE winners: https://www.osti.gov
+5. Search by company name on above sites
+
+**Task: I Need to Find a Program Officer**
+1. Grants.gov listing: Find "Agency Contact" section
+2. NSF directory: https://www.nsf.gov/staff/index.jsp
+3. NIH office hours: https://sbir.nih.gov/office-hours
+4. DOE staff: https://www.energy.gov
+5. State programs: Contact main state economic development office
+
+**Task: I Need to Set Up Discovery Alerts**
+1. Grants.gov alerts: https://www.grants.gov (create saved searches)
+2. Federal Register alerts: https://www.federalregister.gov (subscribe)
+3. SBIR.gov updates: https://www.sbir.gov (check monthly)
+4. NSF announcements: https://www.nsf.gov/funding
+5. State program updates: Contact your state SBIR coordinator
+
+**Task: I Need Help Writing My Proposal**
+1. Free training: https://www.grants.gov/learn-grants
+2. NSF webinars: https://seedfund.nsf.gov/resources/awardees/webinars
+3. NIH training: https://sbir.nih.gov/tutorials
+4. DOE office hours: https://science.osti.gov/sbir/Resources
+5. Grant consultants: Search "SBIR grant writer" on Upwork or Toptal
+
+**Task: I'm Not Sure If I'm Eligible**
+1. SBIR eligibility: https://www.sbir.gov/eligibility
+2. SAM debarment check: https://sam.gov (search your company)
+3. Confirm current SAM.gov status: https://sam.gov
+4. Review specific RFP requirements: Download from https://www.grants.gov
+5. Contact program officer for confirmation (recommended)
+
+**Task: I Want to Learn More About Government Grants**
+1. Federal grants overview: https://www.grants.gov/learn-grants
+2. SBIR guide: https://www.sbir.gov/resources
+3. NIH tutorial: https://sbir.nih.gov/training
+4. SBA small business info: https://www.sba.gov/
+5. State SBIR programs: https://www.sbir.gov/state-programs
+
+**Task: I Need Help Managing My Grant After Winning**
+1. Grant compliance: https://www.acquisition.gov/browse/index/far
+2. NIH grant management: https://grants.nih.gov
+3. Uniform Guidance: https://www.ecfr.gov (search "2 CFR 200")
+4. NSF award administration: https://www.nsf.gov/od/ogc/nsf-grant-general-conditions-effective-may-10-2021
+5. Hire a bookkeeper familiar with federal grants
 
 ### Learning Resources:
 - **Grants.gov Learning Center**: https://www.grants.gov/learn-grants (FREE courses)

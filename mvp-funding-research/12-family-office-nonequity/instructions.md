@@ -25,6 +25,163 @@ Family offices represent one of the highest-value sources of non-equity funding 
 
 ---
 
+## Family Office Non-Equity Outreach Workflow
+
+```mermaid
+graph TD
+    A[Identify Target Family Offices] --> B[Research Decision Structure]
+    B --> C[Build Decision-Maker Profiles]
+    C --> D[Identify Warm Connectors]
+    D --> E[Get Warm Introductions]
+    E --> F[Initial Exploratory Calls]
+    F --> G{Interest Level?}
+    G -->|Low| H[Network for Future]
+    G -->|Medium| I[Schedule Deep Dive]
+    G -->|High| J[Prepare Pitch Materials]
+    I --> K[Customize Pitch Deck]
+    J --> K
+    K --> L[Formal Pitch Presentation]
+    L --> M[Negotiate Terms]
+    M --> N{Agreement Reached?}
+    N -->|No| O[Gather Feedback]
+    N -->|Yes| P[Legal Documentation]
+    O --> Q[Refine Approach]
+    Q --> E
+    P --> R[Capital Closes]
+    R --> S[Ongoing Relationship Management]
+    S --> T[Regular Updates & Reporting]
+    T --> U[Future Funding Rounds]
+```
+
+### Non-Equity Deal Structure Framework
+
+```mermaid
+graph LR
+    A["Capital Structure"] --> B["Revenue Share<br/>2-7% annually"]
+    A --> C["Royalty<br/>Fixed % of sales"]
+    A --> D["Grant<br/>Non-dilutive"]
+    A --> E["Sponsorship<br/>Marketing + capital"]
+    A --> F["Hybrid<br/>Grant + Revenue Share"]
+    B --> B1["5-10 year term<br/>Declining percentage"]
+    C --> C1["Product-specific<br/>Until breakeven+X%"]
+    D --> D1["Mission-aligned<br/>With reporting"]
+    E --> E1["Co-branded<br/>Mutual value"]
+    F --> F1["Best of both<br/>Downside protection"]
+```
+
+---
+
+## Quick-Start: Step-by-Step Guide for Identifying & Approaching Family Offices
+
+### Phase 1: Research & Identification (Weeks 1-2)
+
+**Step 1: Define Your Target Criteria**
+- Identify 3-5 industries or focus areas (clean tech, education, healthcare, fintech, etc.)
+- Determine your funding need ($50K-$2M range)
+- Note geographic preferences (if any)
+- List mission alignment areas (impact, returns, industry leadership)
+- Document any existing connections to target sectors
+
+**Step 2: Build Your Initial Prospect List**
+- Start with 100 family offices using these resources:
+  - FamilyOffice.com (searchable by industry/AUM)
+  - Crunchbase Pro (filter: "Family Office" + your sector)
+  - LinkedIn searches: "Family Office" + your city/sector
+  - Foundation Center database (philanthropic offices)
+  - Regional family office associations
+- Create a spreadsheet with: Name | AUM | Website | Focus | Decision-Maker | Contact
+- Prioritize top 20 by funding focus and alignment
+
+**Step 3: Research Each Target Office**
+For each of your top 20, gather:
+- Recent investments/grants in your space
+- Decision-maker names and titles (CIO, Managing Partner, etc.)
+- Investment/grant criteria and ticket size
+- Timeline expectations (how long do they typically take?)
+- Any public statements about current priorities
+- Website, LinkedIn profiles of decision-makers
+
+**Step 4: Identify Decision-Making Structure**
+- **Single decision-maker?** Often faster (2-4 weeks)
+- **Committee-based?** Expect 8-12 weeks
+- **Family-driven?** Understand family values and legacy mission
+- **Professional team?** More formal process, clearer criteria
+- Document the specific process for each office
+
+### Phase 2: Connector Identification (Week 2-3)
+
+**Step 5: Map Your Connector Network**
+Create a list of people who might know family office decision-makers:
+- **Angel investors** in your space
+- **VCs** (especially those doing crossover investments)
+- **Prior founders** in your industry
+- **Advisors** listed on family office websites
+- **Law firms** specializing in family offices
+- **Wealth managers** and financial advisors
+- **Board members** at nonprofits/institutions they fund
+- **University trustees** (for philanthropic offices)
+
+**Step 6: Find Warm Introduction Pathways**
+- Search LinkedIn for connection to each connector
+- Identify mutual connections (even 2-3 degrees away)
+- Note where you have strongest relationships
+- Rank connectors by strength: "warm" > "lukewarm" > "cold"
+- Target 3-5 connectors per top family office
+
+**Step 7: Build Your Connector Outreach List**
+- Document 50-100 connectors across your 20-30 target family offices
+- Create contact strategy for each (email, phone call, coffee, etc.)
+- Plan value proposition for why they should help you
+- Note timing (who should you reach out to first?)
+
+### Phase 3: Outreach & Engagement (Weeks 3-5)
+
+**Step 8: Craft Personalized Connector Emails**
+- Research each connector individually
+- Reference something specific about them (article, company, investment)
+- Explain why you're reaching out to them specifically
+- Make the ask simple: "Could I take 15 minutes of your time?"
+- Offer value in return (introduction, insight, opportunity)
+- Include link to 1-page summary or pitch deck
+
+**Step 9: Execute Connector Outreach Campaign**
+- Send initial emails to top 30-50 connectors
+- Wait 5-7 days, then follow up with those who didn't respond
+- Aim for 20-30 connector calls
+- During calls: ask for advice, not favors
+- Ask: "Would [Family Office] be a fit? Who do you know there?"
+
+**Step 10: Secure Warm Introductions**
+- When connector agrees to introduce you, provide clear talking points
+- Keep connector informed of outcome
+- Thank them publicly and offer future value
+- Track which connectors are most effective
+- Continue nurturing these relationships
+
+### Phase 4: Direct Engagement (Weeks 6-8)
+
+**Step 11: Conduct Initial Exploratory Calls**
+Following warm introductions or direct outreach:
+- **Goal**: Understand their process, not to pitch yet
+- **Length**: 20-30 minutes
+- **Opening**: "Thank you for taking time. I'd like to understand how you think about [sector/problem]"
+- **Key questions**:
+  - What are your current priorities?
+  - What have you funded recently in this space?
+  - What's your typical investment/grant process?
+  - What would make this a fit for your family office?
+  - Who else on your team should I know?
+- **Closing**: "Would it make sense to have a deeper conversation?"
+
+**Step 12: Qualify & Move Forward**
+- Rate each office: High/Medium/Low interest
+- For high-interest: Move to formal pitch phase
+- For medium-interest: Schedule follow-up call in 4-6 weeks
+- For low-interest: Add to network for future opportunities
+- Document all feedback for future reference
+
+---
+
 ## Section 1: Understanding the Family Office Landscape
 
 ### The Segmentation
@@ -221,6 +378,75 @@ Contact: john.smith@acmefamilyoffice.com
    - Example: "Option A: $500K grant + 3% revenue share; Option B: $250K grant + 5% revenue share"
 
 **Success Indicator**: Refined 1-page value prop + 2-3 financial structure options
+
+#### Non-Equity Deal Structure Reference Guide
+
+**Revenue Share Agreements (Most Popular)**
+- **Structure**: Family office receives 2-7% of monthly/annual revenue for 5-10 years
+- **Best For**: Companies with clear revenue models and predictable growth
+- **Typical Terms**:
+  - Declining percentage (e.g., 5% Year 1-2, 3.5% Year 3-5, 2% Year 6-10)
+  - Cap at 1-3x the original investment
+  - Minimum annual payment after Year X
+  - Sunset after revenue exceeds $X or year X, whichever comes first
+- **Family Office Appeal**: Aligned with company success, clear upside, participation in growth
+- **Example**: $500K capital @ 3.5% revenue share = $17.5K/year at $500K revenue, grows to $175K/year at $5M revenue
+
+**Royalty Agreements (Product-Specific)**
+- **Structure**: Fixed percentage of sales for specific product/division until agreed end date
+- **Best For**: Companies with multiple products/revenue streams
+- **Typical Terms**:
+  - 3-8% of product gross revenue
+  - Per-unit royalty alternative
+  - Tied to specific product lines only
+  - Ends when product revenue declines below threshold
+- **Family Office Appeal**: Clear product focus, easier to track and audit
+- **Example**: EdTech startup pays 5% royalty on enterprise license sales (not SMB sales)
+
+**Grant/Sponsorship Model (Non-Recourse)**
+- **Structure**: Straight capital with no return expectation or social impact focus
+- **Best For**: Mission-driven companies, early-stage, nonprofit models
+- **Typical Terms**:
+  - No repayment obligation
+  - Impact reporting requirements (annual or quarterly)
+  - Naming rights or brand association
+  - Advisory board seat or observation rights
+- **Family Office Appeal**: Aligns with philanthropic mission, social impact ROI
+- **Example**: $250K climate tech grant with annual impact report on CO2 reduction
+
+**Hybrid Models (Increasingly Common)**
+- **Option A: Grant + Revenue Share**
+  - $250K grant (non-dilutive) + 2% revenue share after Year 2
+  - Gives downside protection to family office
+  - Creates incentive alignment post-breakeven
+- **Option B: Tiered Revenue Share**
+  - 5% revenue share on first $2M, 3% on next $3M, 1% above
+  - Reduces family office returns as company scales
+  - Company keeps more upside at scale
+- **Option C: Performance-Gated Structure**
+  - Initial grant only, converts to revenue share if growth milestones missed
+  - Addresses execution risk
+
+**Debt with Equity Kicker (Less Common)**
+- **Structure**: Convertible note or warrant coverage with revenue-based fallback
+- **Best For**: Companies with capital requirements and potential for dilutive funding later
+- **Typical Terms**:
+  - $300K-$500K loan at 4-6% interest
+  - 10% warrant coverage (can convert to equity)
+  - If Series A raised: warrants convert; if not: converts to revenue share
+- **Family Office Appeal**: Multiple exit options, downside protection
+- **Example**: $400K loan at 5% converts to 5% revenue share if no Series A in 3 years
+
+**Deal Structure Comparison Table**
+
+| Structure | Capital | Return Mechanism | Timeline | Company Control | Family Office Upside | Best For |
+|-----------|---------|-----------------|----------|-----------------|-------------------|----------|
+| Revenue Share | $100K-$1M | % of annual revenue | 5-10 years | Retained | High if growth | SaaS, predictable |
+| Royalty | $50K-$500K | % of product sales | 3-7 years | Retained | Medium-High | Multi-product |
+| Grant | $25K-$500K | Non-recourse | One-time | Retained | Impact | Mission-driven |
+| Sponsorship | $50K-$250K | Marketing + limited return | 2-3 years | Retained | Low-Medium | Brand partnerships |
+| Hybrid | $100K-$1M | Grant + Revenue Share | 5-10 years | Retained | High | De-risked approach |
+| Convertible + Warrants | $100K-$500K | Interest + conversion | 3-5 years | Dilutive if convert | Medium-High | Flexible exit |
 
 ---
 
@@ -3303,19 +3529,50 @@ Founder B got funded. Family office said: "We can help with strategy and intros,
 
 ## Section 12: Resources and Next Steps
 
-### Key Databases and Research Tools
+### Comprehensive Family Office Databases & Networks
 
-| Resource | Cost | Best For | Website |
-|----------|------|----------|---------|
-| FamilyOffice.com | $200/month | Comprehensive family office database | familyoffice.com |
-| Crunchbase Pro | $400/month | Family offices by sector/region | crunchbase.com |
-| Preqin | Custom | Alternative assets, family offices | preqin.com |
-| SEC EDGAR | Free | Public foundation filings | sec.gov |
-| ProPublica 990s | Free | Nonprofit/foundation tax returns | propublica.org |
-| PitchBook | $1000+/month | Private companies and investors | pitchbook.com |
-| Bloomberg | $2400+/month | Comprehensive financial data | bloomberg.com |
-| Twitter/X Research | Free | Finding family office professionals | x.com |
-| LinkedIn Sales Navigator | $65/month | Finding decision-makers | linkedin.com |
+#### Paid Databases (Recommended Priority)
+
+| Resource | Cost | Best For | URL |
+|----------|------|----------|-----|
+| FamilyOffice.com | $200/month | Comprehensive family office database with filtering | https://www.familyoffice.com |
+| Crunchbase Pro | $400/month | Family offices by sector, region, stage, AUM | https://www.crunchbase.com/pricing |
+| Preqin | Custom ($5K+) | Alternative assets, detailed family office data | https://www.preqin.com/business-solutions/alternatives |
+| PitchBook | $1000+/month | Private companies, PE/VC data, family offices | https://www.pitchbook.com |
+| Bloomberg Terminal | $2400+/month | Comprehensive financial & investment data | https://www.bloomberg.com/professional/solution/bloomberg-terminal |
+| Wealth-X | Custom | UHNW individual & family office database | https://www.wealth-x.com |
+| Campden FB Intelligence | £3K+/year | Detailed family office insights and reports | https://www.campdenFb.com |
+
+#### Free Research Resources
+
+| Resource | Best For | URL |
+|----------|----------|-----|
+| SEC EDGAR | Public foundation filings and 990 forms | https://www.sec.gov/edgar.shtml |
+| ProPublica 990 Lookup | Searchable nonprofit/foundation tax returns | https://projects.propublica.org/nonprofits |
+| Foundation Center (NY) | Comprehensive foundation database | https://foundationcenter.org |
+| GiveWell Research | Vetted giving recommendations | https://www.givewell.org |
+| Charity Navigator | Nonprofit ratings and data | https://www.charitynavigator.org |
+| LinkedIn (Advanced Search) | "Family Office" + "Chief Investment Officer" | https://www.linkedin.com/search/results/all |
+| Twitter/X | #FamilyOffice, decision-makers, industry news | https://x.com/search |
+| Company Websites | Direct family office family websites and 990s | Search "[Family Name] family office" |
+| Angel List | Angels and early-stage investors | https://www.angellist.com |
+
+#### Family Office Associations & Networks
+
+| Association | Focus | URL | Value |
+|-------------|-------|-----|-------|
+| IWMC (Institute for Private Investors) | Premier peer network & conference | https://www.privatevestor.com | Networking with 500+ CIOs and family office leaders |
+| FOHCE (Family Office Host & CEO Exchange) | Operating practices & governance | https://www.fohce.com | CEO-to-CEO networking, quarterly meetings |
+| IPC (Institute for Private Capital) | Research and thought leadership | https://www.ipcapital.org | Access to research, events, webinars |
+| US Trust Family Office Institute | Education & training programs | https://www.ustrust.com | Conferences, workshops, resources |
+| Campden Family Office Network | Global family office community | https://www.campdenFb.com | Events, publications, research |
+| NACUBO (National Association for College & University Business Officers) | University-linked family offices | https://www.nacubo.org | Access to philanthropic offices at universities |
+| Council on Foundations | Philanthropic family offices | https://www.cof.org | Networking, resources, annual conference |
+| National Center for Charitable Giving | Donor advisory funds & giving | https://nacg.org | Research and best practices |
+| Sorenson Center for Family Philanthropy | Academic research & programs | https://www.byu.edu/sorenson-center | Educational resources, networking |
+| Family Wealth Council | Multi-family office focus | https://www.familywealthcouncil.com | Membership-based community |
+| Investment Adviser Association (IAA) | Professional advisors to family offices | https://www.investmentadviser.org | Find advisors, industry standards |
+| American Institute of CPAs (AICPA) | Tax and accounting for UHNW | https://www.aicpa.org | Find certified advisors |
 
 ### Key Conferences for Family Office Networking
 
@@ -3398,6 +3655,149 @@ Founder B got funded. Family office said: "We can help with strategy and intros,
 - Negotiate term sheets
 - Complete legal documentation
 - Close 1-2 non-equity funding rounds
+
+---
+
+## Section 13: Non-Equity Deal Structure Negotiation Guide
+
+### Key Negotiation Principles
+
+**1. Come Prepared with Multiple Options**
+- Present 2-3 structure variations (different capital amount, revenue %, term length)
+- Show returns for each scenario at conservative, realistic, and optimistic growth rates
+- Make family office's job easier by providing clear choices
+- Example: Option A ($300K + 3.5% RS), Option B ($500K + 2.5% RS), Option C ($250K grant + 4% RS)
+
+**2. Know Your Walk-Away Threshold**
+- Minimum capital needed to fund your business plan
+- Maximum percentage dilution (revenue % annually) you can afford
+- Maximum term length (don't commit to 15+ years of revenue share)
+- Critical business decisions you won't compromise on
+- Before negotiating, know your bottom line on each parameter
+
+**3. Structure for Mutual Upside**
+- Declining percentages (5% Year 1-2, then 3%) incentivize company growth
+- Caps on total returns (1.5-2.5x invested capital) give company comfort
+- Sunset clauses after revenue milestones (>$5M ARR, 10 years, etc.)
+- These show family office you're thinking long-term partnership
+
+**4. Transparency on Unit Economics**
+- Show detailed math: CAC, LTV, gross margins, path to profitability
+- Explain why the revenue % they're proposing works/doesn't work
+- Share sensitivity analysis: "At 5%, we'd need to keep 95¢ per dollar after paying you"
+- Family offices respect founders who understand their own numbers
+
+**5. Think About Tax Implications**
+- Consult a tax advisor on revenue share vs royalty treatment
+- Revenue share may be more tax-efficient than dividend equivalent structures
+- Document clearly how payments will be made (monthly, quarterly, annual)
+- Family office may have preferences based on their tax situation
+
+### Common Negotiation Scenarios
+
+**Scenario 1: Family Office Wants High Percentage (6-8%)**
+- **Your Response**: "That percentage works if we grow faster than we project. Let's use declining percentages - 6% Years 1-2, then 4% Years 3-5, then 2%"
+- **Alternative**: Lower initial percentage + performance bonus if you hit growth milestones
+- **Ask**: "What if we include a cap - you get the higher percentage but maximum of 2x your capital?"
+
+**Scenario 2: Family Office Wants Longer Term (15+ years)**
+- **Your Response**: "We love the partnership idea. Let's commit to 10 years with an option to renew for 5 more if both sides want to continue"
+- **Alternative**: Automatic sunset if company gets acquired or goes public
+- **Ask**: "What if the term shortens when revenue hits $10M? That way we both benefit from massive success"
+
+**Scenario 3: Family Office Wants Equity Instead of Revenue Share**
+- **Your Response**: "We're focused on control, but we can give equity if the percentage is smaller (0.5-1%) and we keep all governance rights"
+- **Alternative**: Suggest a warrant/option structure instead - conversion option but not automatic
+- **Ask**: "What if we start with 3-year revenue share, then convert to 0.25% equity if both sides want to continue?"
+
+**Scenario 4: Disagreement on Revenue Definition**
+- **Document clearly**: Does "revenue" include refunds? Free tier users? Channel partner revenue?
+- **Suggest**: Third-party audit rights (annual audit, family office pays costs)
+- **Offer**: Dashboard access to real-time metrics showing revenue calculation
+- **Protection**: "Net of [specific carve-outs]" - define exactly what counts
+
+**Scenario 5: Family Office Wants Board Seat or Veto Rights**
+- **Your Response**: "Observation rights on our board meetings - you can attend and advise but not vote"
+- **Alternative**: Quarterly calls where you share updates and solicit feedback
+- **Ask**: "What decisions are most important for you to have visibility into? We can create a reporting cadence"
+- **Protect**: No veto on hiring, product direction, or capital raises
+
+### Deal Structure Checklist Before Signing
+
+- [ ] Capital amount is sufficient for 12-24 month plan
+- [ ] Percentage/royalty amount is sustainable (won't prevent future hiring, growth)
+- [ ] Term length doesn't extend beyond realistic company runway (plan for 10 years max)
+- [ ] Declining percentages built in (optional but recommended)
+- [ ] Cap on total returns (2-3x investment) specified
+- [ ] Sunset/exit clauses clear (IPO, acquisition, revenue milestone)
+- [ ] Payment frequency reasonable (quarterly minimum, monthly preferred)
+- [ ] Revenue definition crystal clear (get legal review)
+- [ ] Tax treatment documented (capital gain vs ordinary income)
+- [ ] Dispute resolution process specified (arbitration, not litigation)
+- [ ] Family office communication/reporting cadence defined
+- [ ] Right to refinance/prepay included (if you raise equity later)
+- [ ] Use of funds documented (helps justify the capital need)
+- [ ] Termination conditions clear (what happens if company dissolves?)
+
+---
+
+## Directory: Where to Find Specific Family Offices
+
+### By Focus Area
+
+**Climate Tech & Sustainability**
+- Breakthrough Energy Ventures (Bill Gates) — https://www.breakthroughenergy.org
+- Lowercarbon Capital — https://www.lowercarbon.com
+- DBL Partners — https://www.dblpartners.vc
+- Congruent Ventures — https://congruentventures.com
+
+**Education & Human Capital**
+- Walton Family Foundation — https://www.waltonfamilyfoundation.org
+- Gates Foundation (Education) — https://www.gatesfoundation.org/our-work/programs/education
+- Omidyar Network — https://omidyar.com
+- Siebel Foundation — https://www.siebelinstitute.com
+
+**Healthcare & Life Sciences**
+- Bezos Expeditions — https://www.bezosexpeditionary.com (indirect family office)
+- Li Ka Shing Foundation — https://www.lksf.org
+- Sergey Brin Family Fund — https://www.sergeybrinfamilyfund.org
+- Musk Foundation — https://www.muskfoundation.org
+
+**Fintech & Financial Inclusion**
+- PayPal Founder Collective — https://www.foundercollective.com
+- Square/Block (Jack Dorsey projects) — https://square.com
+- Stripe Fund — https://stripe.com
+
+**Emerging Markets & Global Impact**
+- Tata Trusts (Ratan Tata) — https://tatatrusts.org
+- Premji Invest (Azim Premji) — https://premjiinvest.com
+- Berkadia (Berkshire-adjacent) — https://www.berkadia.com
+
+### By Region
+
+**West Coast (Silicon Valley/Bay Area)**
+- Kapor Capital — https://www.kaporcapital.com
+- Collaborative Fund — https://www.collaborativefund.com
+- Felicis Ventures — https://www.felicis.com
+- Homebrew — https://homebrew.co
+
+**East Coast (New York/Boston)**
+- Paradigm for Giving (UHNW focus) — https://www.paradigmforggiving.org
+- Boston Properties Development Co. — (Family office from real estate)
+- Bessemer Trust (multi-family) — https://www.bessemertrust.com
+
+**Midwest**
+- Omaha-based offices (Berkshire sphere) — LinkedIn search + local chambers
+
+### Finding Private Family Offices Not Publicly Visible
+
+1. **LinkedIn Advanced Search**: "Chief Investment Officer" + "Family Office" + [City]
+2. **Foundation Center**: Search 990 forms for family foundation activity
+3. **Regional family office associations**: Join local association, get member directory
+4. **University endowment networks**: Many endowments act like family offices
+5. **Professional advisors**: Wealth managers, family office lawyers maintain client lists
+6. **Crunchbase/PitchBook**: Filter by "investor type" = family office
+7. **Startup accelerators**: Ask alumni of Y Combinator, Techstars - who funded them?
 
 ---
 
