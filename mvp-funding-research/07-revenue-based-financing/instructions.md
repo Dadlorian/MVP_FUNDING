@@ -44,6 +44,81 @@ Revenue-Based Financing (RBF) is a non-dilutive funding method where founders re
 
 ---
 
+## RBF Evaluation Process & Repayment Flowcharts
+
+### RBF Evaluation Decision Flowchart
+
+```mermaid
+graph TD
+    A["Do You Have Revenue?"] -->|No| B["Ineligible for RBF<br/>Consider: Equity, Grants,<br/>Credit Cards"]
+    A -->|Yes| C{Is MRR Threshold Met?}
+
+    C -->|Below Minimum| D["Does Business Model<br/>Justify Higher Fee?"]
+    D -->|No| E["Wait Until Revenue Grows<br/>or Choose Different Funding"]
+    D -->|Yes| F["Apply to Flexible Providers<br/>Kickdeck, Creative Juice"]
+
+    C -->|Above Minimum| G{Monthly Revenue Growth Rate}
+
+    G -->|<5% MoM| H["Growth Too Slow<br/>May Be Declined"]
+    G -->|5-15% MoM| I["Good Candidate<br/>Proceed with Application"]
+    G -->|>15% MoM| J["Excellent Candidate<br/>Multiple Offers Expected"]
+
+    H -->|Improve Metrics| K["Focus on Unit Economics<br/>Try in 3-6 Months"]
+
+    I --> L{Has Accounting<br/>Connected?}
+    J --> L
+
+    L -->|No| M["Set Up QuickBooks/Xero<br/>with Bank Connection"]
+    L -->|Yes| N{"CAC Payback<br/>< 12 Months?"}
+
+    M --> N
+
+    N -->|No| O["Improve LTV/CAC<br/>Then Apply"]
+    N -->|Yes| P["Prepare Financial<br/>Documentation"]
+
+    P --> Q{"Revenue Type?"}
+
+    Q -->|Recurring/Subscription| R["Apply to SaaS-Focused<br/>Pipe, Capchase, Founderpath"]
+    Q -->|E-Commerce/DTC| S["Apply to E-Commerce<br/>Clearco, Wayflyer, Settle"]
+    Q -->|Creator/Content| T["Apply to Creator<br/>Spotter, Karat, Creative Juice"]
+
+    R --> U["Prepare Term Sheet<br/>Comparison & Negotiate"]
+    S --> U
+    T --> U
+
+    U --> V["Close Funding<br/>in 2-4 Weeks"]
+```
+
+### RBF Repayment Structure & Cash Flow Impact
+
+```mermaid
+graph LR
+    A["Capital Received<br/>Amount: $X<br/>Multiple: 1.3-1.5x"] -->|Monthly Calculation| B["Monthly Revenue<br/>Recorded in<br/>Accounting System"]
+
+    B -->|Apply Percentage| C["RBF Payment %<br/>2-15% of Revenue"]
+
+    C -->|Automatic Deduction| D["ACH Debit from<br/>Business Account"]
+
+    D --> E["Repayment Progress<br/>Toward Cap"]
+
+    E -->|Track Cumulative| F["Payoff Timeline<br/>Varies by Revenue<br/>& Payment %"]
+
+    F -->|When Cap Reached| G["Funding Obligation<br/>Complete<br/>Zero Ongoing<br/>Fees/Terms"]
+```
+
+### Cash Flow Scenario: $200K RBF at 8% Monthly
+
+```mermaid
+graph TD
+    A["Month 1<br/>MRR: $40K<br/>Payment: $3,200<br/>Cumulative: $3,200"] -->|Month 2| B["MRR: $44K<br/>Payment: $3,520<br/>Cumulative: $6,720"]
+    B -->|Month 3| C["MRR: $48K<br/>Payment: $3,840<br/>Cumulative: $10,560"]
+    C -->|Month 6| D["MRR: $60K<br/>Payment: $4,800<br/>Cumulative: $28,560"]
+    D -->|Month 12| E["MRR: $100K<br/>Payment: $8,000<br/>Cumulative: $95,000"]
+    E -->|Month 18| F["MRR: $140K<br/>Payment: $11,200<br/>Cumulative: $150,000<br/>CAP REACHED<br/>Obligation Complete"]
+```
+
+---
+
 ## How Top-Tier Founders Identify RBF Providers
 
 ### Tier-1 RBF Providers (Highest Approval Odds)
@@ -284,6 +359,166 @@ Revenue-Based Financing (RBF) is a non-dilutive funding method where founders re
 2. Wayflyer (global reach)
 3. Uncapped (Europe-focused)
 4. Re:cap (Europe)
+
+---
+
+## Enhanced RBF Provider Resource Directory
+
+### Top-Tier Tier Providers - Detailed Resource Guide
+
+#### **1. CLEARCO**
+- **Website**: https://www.clearco.com
+- **Dashboard**: https://dashboard.clearco.com
+- **Support**: support@clearco.com | 1-855-400-2673
+- **Application Time**: 2-7 days (fastest)
+- **Min Revenue**: $2K/month
+- **Max Funding**: $2M
+- **Repayment Multiple**: 1.35x
+- **Best For**: Fast approval, SaaS, e-commerce
+- **Key Features**:
+  - Fastest approval times in industry
+  - API integration available
+  - No personal guarantee required
+  - Mobile app for tracking
+- **Documentation Needed**: Bank statements (6 months), Tax returns (2 years), ID verification
+- **Alternative Links**: Product Hunt (reviews), G2 (ratings)
+
+#### **2. PIPE**
+- **Website**: https://www.pipe.com
+- **Dashboard**: https://app.pipe.com
+- **Support**: support@pipe.com | Schedule demo
+- **Application Time**: 7-14 days
+- **Min Revenue**: $1K/month
+- **Max Funding**: $5M
+- **Repayment Multiple**: 1.3-1.5x
+- **Best For**: SaaS, recurring revenue, multi-provider comparison
+- **Key Features**:
+  - Marketplace of 50+ capital providers
+  - Compare multiple offers simultaneously
+  - Automated underwriting
+  - API for integrations
+- **Unique Advantage**: See all available offers in one place before deciding
+- **Documentation Needed**: Bank statements, Revenue analytics, Tax returns
+- **Resources**: https://blog.pipe.com (educational content)
+
+#### **3. LIGHTER CAPITAL**
+- **Website**: https://www.lightercapital.com
+- **Dashboard**: https://dashboard.lightercapital.com
+- **Support**: hello@lightercapital.com | 1-844-503-0444
+- **Application Time**: 14-21 days
+- **Min Revenue**: $3K/month
+- **Max Funding**: $1.5M
+- **Repayment Multiple**: 1.32-1.4x
+- **Best For**: Human-centric approach, personalized support
+- **Key Features**:
+  - Personal relationship manager assigned
+  - Flexible terms negotiable
+  - Transparent pricing calculator
+  - Customer success team
+- **Documentation Needed**: Bank statements (6-12 months), P&L, Tax returns, Use of funds
+- **Alternative Products**: Lighter Capital Plus (extended terms)
+
+#### **4. CAPCHASE**
+- **Website**: https://www.capchase.com
+- **Dashboard**: https://app.capchase.com
+- **Support**: support@capchase.com | Intercom chat on dashboard
+- **Application Time**: 7-14 days
+- **Min Revenue**: $10K ARR
+- **Max Funding**: $10M
+- **Repayment Multiple**: 1.2-1.35x (best rates)
+- **Best For**: B2B SaaS with annual contracts
+- **Key Features**:
+  - Best rates for ARR-based businesses
+  - Convert future revenue to immediate cash
+  - Global operations (US, EU, APAC)
+  - White-glove service for $1M+ deals
+- **Ideal Metrics**: MRR >$20K, ARR >$240K, <5% churn
+- **Documentation Needed**: Contracts signed, Customer list with amounts, Financial statements
+
+#### **5. WAYFLYER**
+- **Website**: https://www.wayflyer.com
+- **Dashboard**: https://www.wayflyer.com/apply
+- **Support**: support@wayflyer.com
+- **Application Time**: 7-21 days
+- **Min Revenue**: $5K/month
+- **Max Funding**: $20M (highest cap)
+- **Repayment Multiple**: 1.35-1.5x
+- **Best For**: E-commerce, DTC, global reach
+- **Key Features**:
+  - Highest funding amounts available
+  - Revenue-based and merchant cash advance options
+  - Marketing spend optimization included
+  - Global expansion support
+- **Integrations**: Shopify, Amazon, WooCommerce, BigCommerce
+- **Resources**: https://blog.wayflyer.com (e-commerce insights)
+
+#### **6. FOUNDERPATH**
+- **Website**: https://founderpath.com
+- **Application**: https://app.founderpath.com
+- **Support**: support@founderpath.com
+- **Application Time**: 10-14 days
+- **Min Revenue**: $10K/month
+- **Max Funding**: $5M
+- **Repayment Multiple**: 1.3-1.4x
+- **Best For**: SaaS, no personal guarantee
+- **Key Features**:
+  - NO personal guarantee required (major differentiator)
+  - Founder-first approach
+  - Simple contract terms
+  - US and Europe coverage
+- **Eligibility**: SaaS only, <5% monthly churn, positive unit economics
+- **Documentation Needed**: Bank statements, P&L, Customer metrics
+
+#### **7. SETTLE**
+- **Website**: https://www.settle.co
+- **Application**: https://app.settle.co
+- **Support**: support@settle.co
+- **Application Time**: 7-14 days
+- **Min Revenue**: $20K/month
+- **Max Funding**: $10M
+- **Repayment Multiple**: 1.3-1.45x
+- **Best For**: Shopify and Amazon sellers
+- **Key Features**:
+  - Platform integration (Shopify, Amazon native)
+  - Real-time revenue visibility
+  - Automated repayment from sales
+  - Merchant support team
+- **Integrations**: Direct Shopify app, Amazon Seller Central, Klaviyo
+- **Unique**: Auto-connects to revenue streams for automatic calculations
+
+#### **8. SPOTTER**
+- **Website**: https://www.spotter.la
+- **Application**: https://creators.spotter.la
+- **Support**: creators@spotter.la
+- **Application Time**: 30-45 days (due diligence)
+- **Ideal Audience**: 100K+ YouTube subscribers
+- **Funding Range**: $50K-$10M+
+- **Best For**: YouTube creators, content monetization
+- **Key Features**:
+  - Buys future ad revenue
+  - Creator retains IP and channel ownership
+  - No personal guarantee
+  - Long-term partnership approach
+- **Metrics Tracked**: Subscriber growth, avg views, engagement rates
+- **Documentation**: YouTube analytics, brand deals history, audience demographics
+
+### Comparison & Selection Tools
+
+#### **RBF Marketplace Comparison**
+- **Pipe.com Marketplace**: Compare 50+ providers in one application
+- **Link**: https://www.pipe.com/marketplace
+- **Benefit**: See all offers simultaneously before choosing
+
+#### **Online RBF Calculators**
+- **Clearco ROI Calculator**: https://www.clearco.com/calculator
+- **Lighter Capital Cost Estimator**: https://www.lightercapital.com/calculator
+- **Capchase ARR Calculator**: https://www.capchase.com/calculator
+- **Pipe Amount Calculator**: https://www.pipe.com/calculator
+
+#### **Provider Comparison Tools**
+- **G2.com RBF Reviews**: https://www.g2.com/products/clearco/reviews
+- **Trustpilot Provider Ratings**: https://www.trustpilot.com/ (search provider names)
+- **Product Hunt Discussions**: https://www.producthunt.com/ (search "RBF" or provider names)
 
 ---
 
@@ -1411,6 +1646,571 @@ Reactive:
 
 ---
 
+## Step-by-Step RBF Application Guide
+
+### Phase 1: Pre-Application Preparation (2-3 Days)
+
+#### Step 1: Verify Eligibility
+Before applying to any provider, confirm you meet their requirements:
+
+```
+ELIGIBILITY VERIFICATION CHECKLIST
+
+Provider Name: ___________________
+Minimum MRR Required: $___________
+Your Current MRR: $_____________
+[ ] Your MRR exceeds minimum? YES / NO
+
+Check all that apply:
+[ ] 6+ months of revenue history
+[ ] Business bank account with documented transactions
+[ ] Can access accounting software (QuickBooks, Xero, Stripe, etc.)
+[ ] Have 6 months bank statements ready
+[ ] Have 2 years of tax returns
+[ ] No major financial red flags
+
+Score: If checked 6+, you're ready. If <6, improve areas first.
+```
+
+#### Step 2: Gather Financial Documents
+Organize all documents in a single folder:
+
+```
+RBF APPLICATION DOCUMENTS FOLDER STRUCTURE
+
+📁 RBF_Application/
+├── 📁 Bank_Statements/
+│   ├── Jan_2024.pdf
+│   ├── Feb_2024.pdf
+│   ├── Mar_2024.pdf
+│   ├── Apr_2024.pdf
+│   ├── May_2024.pdf
+│   └── Jun_2024.pdf
+├── 📁 Tax_Returns/
+│   ├── Business_2023_1120.pdf
+│   ├── Business_2022_1120.pdf
+│   ├── Personal_2023_1040.pdf
+│   └── Personal_2022_1040.pdf
+├── 📁 Financial_Statements/
+│   ├── P&L_YTD_2024.pdf
+│   ├── P&L_2023_Full.pdf
+│   ├── Balance_Sheet_Current.pdf
+│   └── Cash_Flow_Projection_12mo.pdf
+├── 📁 Business_Documents/
+│   ├── Articles_of_Incorporation.pdf
+│   ├── Operating_Agreement.pdf
+│   ├── Government_ID.pdf (personal)
+│   └── Business_License.pdf
+├── 📁 Revenue_Proof/
+│   ├── Stripe_Dashboard_Screenshot.pdf
+│   ├── PayPal_Activity_Report.pdf
+│   ├── Shopify_Revenue_Report.pdf
+│   └── Accounting_System_Export.csv
+└── 📄 Use_of_Funds.pdf
+```
+
+#### Step 3: Calculate Key Metrics
+Prepare metrics to discuss with underwriters:
+
+```
+KEY METRICS TO KNOW BEFORE APPLYING
+
+REVENUE METRICS:
+- Current MRR: $_____________
+- MRR 3 months ago: $_____________ (calculate growth %)
+- Growth rate: ___% month-over-month
+- Monthly recurring % of total: ___%
+- Total annual revenue run rate (MRR × 12): $______________
+
+CUSTOMER METRICS:
+- Total number of customers: _______
+- Average customer lifetime value (LTV): $______________
+- Customer acquisition cost (CAC): $______________
+- Months to payback CAC: _______ (LTV ÷ CAC ÷ monthly margin)
+- Monthly churn rate: __% (customer count change)
+
+UNIT ECONOMICS:
+- Gross margin %: ___%
+- Operating margin %: ___%
+- Runway at current burn rate: _____ months
+- Expected monthly burn if deploying capital: $_____________
+
+USE OF FUNDS:
+What you'll spend capital on (be specific):
+1. _________________________________ $______________
+2. _________________________________ $______________
+3. _________________________________ $______________
+Total: $______________
+
+Expected outcome:
+- Target revenue after deployment: $_____________
+- Timeline to achieve: _____ months
+- Expected ROI: ____%
+```
+
+### Phase 2: Application Submission (1 Day)
+
+#### Step 4: Select Target Providers
+Choose 3-5 providers based on your metrics:
+
+```
+PROVIDER SELECTION WORKSHEET
+
+Business Type: [ ] SaaS  [ ] E-Commerce  [ ] Creator  [ ] Services  [ ] Other
+Current MRR: $_____________
+Growth Rate: ___% MoM
+
+Priority 1 (Best fit):
+Provider Name: ___________________
+Reason: _________________________
+Application URL: __________________
+Deadline: _____________
+
+Priority 2 (Good fit):
+Provider Name: ___________________
+Reason: _________________________
+Application URL: __________________
+Deadline: _____________
+
+Priority 3 (Backup):
+Provider Name: ___________________
+Reason: _________________________
+Application URL: __________________
+Deadline: _____________
+```
+
+#### Step 5: Complete Each Application
+
+For each provider, follow these steps:
+
+```
+APPLICATION COMPLETION CHECKLIST
+
+Provider: ___________________
+Application Start Date: _____________
+Expected Completion Time: 15-30 minutes
+
+SECTION 1: BASIC INFORMATION
+[ ] Company legal name
+[ ] Business formation type (LLC, C-Corp, etc.)
+[ ] Years in business
+[ ] Your full legal name
+[ ] Your email address
+[ ] Your phone number
+[ ] Business phone
+[ ] Physical business address
+
+SECTION 2: REVENUE INFORMATION
+[ ] Monthly recurring revenue (MRR)
+[ ] Revenue type (Recurring, Transactional, Hybrid)
+[ ] Revenue sources (Stripe, PayPal, Shopify, etc.)
+[ ] Growth rate %
+[ ] Churn rate %
+[ ] Time revenue has been consistent
+
+SECTION 3: BANKING & ACCOUNTING
+[ ] Business bank account type (Checking/Savings)
+[ ] Bank name
+[ ] Willing to connect accounting software? YES / NO
+[ ] Current accounting system (QB, Xero, Wave, etc.)
+[ ] Permission for provider to review bank statements? YES / NO
+
+SECTION 4: DOCUMENTS UPLOAD
+[ ] 6 months bank statements (.pdf or .csv)
+[ ] 2 years tax returns (.pdf)
+[ ] Photo ID verification
+[ ] Government-issued proof of ID
+[ ] Any additional supporting docs
+
+SECTION 5: FUNDING REQUEST
+[ ] Amount requested: $______________
+[ ] Purpose of funds (brief description)
+[ ] Deployment timeline
+[ ] Expected outcome/ROI
+
+SECTION 6: TERMS ACCEPTANCE
+[ ] Read terms and conditions
+[ ] Acknowledge non-dilutive nature
+[ ] Consent to ACH debit from bank account
+[ ] Agree to provider's underwriting process
+```
+
+#### Step 6: Connect Accounting Software
+When prompted, authorize provider access:
+
+```
+ACCOUNTING CONNECTION PROCESS
+
+Provider dashboard will redirect to your accounting software.
+
+Typical flow:
+1. Click "Connect QuickBooks/Xero/Stripe"
+2. You're taken to accounting platform login
+3. Log in with your credentials
+4. Review permissions (providers typically get READ-ONLY access)
+5. Grant access
+6. Return to provider dashboard
+7. Confirm successful connection
+
+WHAT THEY CAN SEE:
+- ✓ Revenue transactions
+- ✓ Customer names and amounts
+- ✓ Monthly revenue trends
+- ✓ Account balance
+- ✓ Transaction history
+
+WHAT THEY CANNOT SEE:
+- ✗ Sensitive employee salary information
+- ✗ Detailed supplier/vendor contracts
+- ✗ Personal financial information
+- ✗ Tax planning details
+
+READ-ONLY ACCESS MEANS:
+- They cannot modify your records
+- They cannot access sensitive data
+- They cannot make changes
+- You remain in full control
+```
+
+#### Step 7: Confirm Submission
+After submitting each application:
+
+```
+POST-SUBMISSION VERIFICATION
+
+For each provider, confirm:
+[ ] Received confirmation email
+[ ] Confirmation email has underwriter contact info
+[ ] Have noted underwriter name and email
+[ ] Have added deadline to calendar (follow-up in 48 hours if no contact)
+[ ] Have saved application reference number
+[ ] Document any special instructions
+
+Record here:
+Provider: _________________________
+Confirmation Email From: ___________
+Underwriter Name: __________________
+Underwriter Email: __________________
+Underwriter Phone: __________________
+Next Contact Date: __________________
+Reference Number: __________________
+```
+
+### Phase 3: Underwriting & Due Diligence (5-10 Days)
+
+#### Step 8: Respond to Underwriter Requests
+Underwriters will ask questions or request additional documents.
+
+```
+UNDERWRITING RESPONSE PROTOCOL
+
+When underwriter contacts you:
+
+TIMING:
+[ ] Respond within 24 hours (ideally same business day)
+[ ] Provide COMPLETE information (not partial)
+[ ] Ask for clarification if request is unclear
+
+TYPICAL QUESTIONS:
+1. "Can you explain this revenue dip in [month]?"
+   → Explain briefly: seasonal variance, campaign timing, customer change, etc.
+
+2. "What is your customer concentration?"
+   → "Our top 3 customers represent __% of revenue"
+   → "Largest customer is __% of MRR"
+
+3. "How will you deploy this capital?"
+   → Give specific breakdown:
+      - Sales & Marketing: $_______
+      - Product Development: $_______
+      - Operations/Team: $_______
+      - Working Capital: $_______
+
+4. "What's your growth projection?"
+   → Show monthly or quarterly projections for next 12 months
+
+5. "Why do you need this capital now?"
+   → Explain opportunity: "Hiring sales team to accelerate CAC payback"
+
+6. "Have you raised capital before?"
+   → Explain previous funding (angel, equity, SBA loans, etc.)
+
+DOCUMENT REQUESTS YOU MAY RECEIVE:
+[ ] Recent (last 30 days) bank statement
+[ ] Updated P&L or revenue verification
+[ ] Customer contracts or agreements
+[ ] Channel/acquisition breakdown
+[ ] Detailed use-of-funds breakdown
+[ ] Cash flow projections
+[ ] Any unusual transaction explanations
+
+RESPONSE TEMPLATE:
+"Hi [Underwriter Name],
+
+Thanks for the request. [Answer question directly with supporting data].
+
+[If providing documents, list what's attached]
+
+Please let me know if you need any clarification.
+
+Best regards,
+[Your Name]"
+```
+
+#### Step 9: Financial Verification Call (Optional)
+Some providers may schedule a brief call to discuss:
+
+```
+UNDERWRITER CALL PREPARATION
+
+Before the call:
+[ ] Have recent financial statements ready to reference
+[ ] Know your exact current MRR and growth rate
+[ ] Know where you'll deploy capital (specific use cases)
+[ ] Know your cash runway with and without this capital
+[ ] Have 2-3 customer success stories ready to share
+
+What they'll likely ask:
+1. "Walk me through your revenue model"
+   → Explain how you make money (subscriptions, one-time sales, etc.)
+
+2. "Why the growth rate trajectory?"
+   → Explain your efforts: marketing spend, product launches, team growth
+
+3. "What happens if revenue dips?"
+   → Explain resilience: recurring revenue, contracted customers, etc.
+
+4. "How will this capital specifically impact revenue?"
+   → Give concrete example: "Hire sales team → increase CAC payback"
+
+Call tips:
+- Be honest and transparent
+- If you don't know an answer, say so and offer to follow up
+- Don't oversell or make promises you can't keep
+- Show enthusiasm but also realism
+- Have supporting documents nearby to reference
+```
+
+### Phase 4: Term Sheet Review (1-3 Days)
+
+#### Step 10: Receive & Evaluate Term Sheets
+When approved, you'll receive offer(s):
+
+```
+TERM SHEET EVALUATION CHECKLIST
+
+Provider Name: _________________________
+Date Received: _____________
+
+BASIC TERMS:
+[ ] Principal Amount: $_____________
+[ ] Repayment Multiple: ______x (total you'll repay)
+[ ] Total Repayment Amount: $_____________ (Principal × Multiple)
+[ ] Monthly Percentage: ___% of revenue
+[ ] Estimated Repayment Timeline: _____ months (at current revenue)
+
+COST ANALYSIS:
+[ ] True cost = Total Repayment - Principal = $_____________
+[ ] Monthly cost at current revenue = $_____________
+[ ] Annualized percentage cost = ___%
+
+TERMS & CONDITIONS:
+[ ] Maximum monthly payment cap (if any): $______________
+[ ] Minimum monthly payment: $_____________
+[ ] Personal guarantee required? YES / NO
+[ ] Any restrictive covenants (limits on other fundraising)? YES / NO
+[ ] Any prepayment penalties if paid early? YES / NO
+[ ] Funding timeline if accepted: _____ days
+
+COMPARE TO OTHER OFFERS:
+Offer A (Provider 1): 1.___ x multiple, ___% monthly, $___ true cost
+Offer B (Provider 2): 1.___ x multiple, ___% monthly, $___ true cost
+Offer C (Provider 3): 1.___ x multiple, ___% monthly, $___ true cost
+
+DECISION CRITERIA:
+1. Which has best terms (lowest cost)? _________________
+2. Which provider has best customer reviews? ___________
+3. Which aligns best with your runway/growth needs? _____
+4. Which have you had best communication with? ________
+
+RECOMMENDED CHOICE: _________________________
+Reason: ___________________________________
+```
+
+#### Step 11: Negotiate If Needed
+You have room to negotiate:
+
+```
+NEGOTIATION TALKING POINTS
+
+DON'T ask for: (unlikely to change)
+- A lower repayment multiple (this is their pricing)
+- A lower percentage (driven by your metrics)
+
+DO ask for: (more negotiable)
+- Extended timeline if seasonal business
+- Maximum payment caps
+- Grace period before first payment
+- Prepayment discounts
+- Fast-track funding if you sign quickly
+
+NEGOTIATION TEMPLATE:
+
+"Hi [Provider Name],
+
+Thank you for the offer. We're excited about working together.
+
+We'd like to discuss [specific term]:
+
+CURRENT TERM: [What they offered]
+REQUEST: [What you'd like]
+RATIONALE: [Why this makes sense for both parties]
+
+Would this be possible to adjust?
+
+Best regards,
+[Your Name]"
+
+Common modifications granted:
+- Seasonal payment adjustment (higher %, shorter timeline, or vice versa)
+- 30-day payment grace period
+- Maximum monthly payment cap
+- Prepayment bonus/discount (0.5-1% off if paid early)
+```
+
+### Phase 5: Closing & Funding (3-5 Days)
+
+#### Step 12: Accept Term Sheet & Sign Documents
+
+```
+CLOSING CHECKLIST
+
+[ ] Signed term sheet received
+[ ] Reviewed all documents
+[ ] Understand repayment obligations
+[ ] Have lawyer review (optional but recommended for >$250K)
+[ ] Ready to proceed
+
+DOCUMENTS TO SIGN:
+[ ] Term Sheet / Offer Letter
+[ ] Promissory Note (repayment obligation)
+[ ] Business Account ACH Authorization
+[ ] Data Privacy & Consent forms
+[ ] Any ancillary documents
+
+SIGNING PROCESS:
+Typically via DocuSign or similar e-signature platform
+1. Provider sends document link via email
+2. Click link and review each page
+3. Sign where indicated
+4. Date signature
+5. Complete entire document
+6. Submit electronically
+```
+
+#### Step 13: Bank Account Setup & Verification
+
+```
+ACH AUTHORIZATION SETUP
+
+The provider will need to set up automatic ACH debits from your business bank account.
+
+REQUIRED INFORMATION:
+[ ] Business bank account number
+[ ] Bank routing number
+[ ] Bank name
+[ ] Account type (Checking preferred for easy ACH)
+[ ] Bank contact information
+
+VERIFICATION PROCESS:
+1. You authorize ACH debit on signed forms
+2. Provider deposits 2 test micro-deposits (usually $0.XX amounts)
+3. You verify amounts on your bank statement (1-2 business days)
+4. You confirm amounts to provider (online form or email)
+5. Provider confirms verification complete
+6. Automatic monthly payments can now begin
+
+SAFETY NOTES:
+- Funds are deducted only on agreed dates (usually month-end)
+- ACH can be stopped by your bank if you revoke authorization
+- Typical ACH debit takes 1-2 business days to process
+- Have sufficient funds on payment dates (ensure positive cash flow)
+```
+
+#### Step 14: Receive Funding
+After all documents signed and verified:
+
+```
+FUNDING RECEIPT PROCESS
+
+Timeline: Typically 2-5 business days after documents signed
+
+HOW YOU RECEIVE FUNDS:
+Option A: ACH deposit to your business bank account
+- Most common method
+- Funds appear in 1-2 business days
+- Check your business bank account balance
+
+Option B: Wire transfer (less common)
+- May have wire fees
+- Typically faster (same business day)
+
+WHAT TO DO WHEN FUNDS ARRIVE:
+[ ] Verify correct amount in bank account
+[ ] Confirm with provider that funds were sent successfully
+[ ] Document receipt in accounting system
+[ ] Create P&L entry for capital received
+[ ] Do NOT commingle with personal funds
+[ ] Do NOT use for personal expenses
+
+INITIAL TASKS:
+[ ] Set up RBF tracking in accounting system
+[ ] Record monthly payment schedule
+[ ] Set up calendar reminders for first payment due date
+[ ] Create dashboard to track deployment of capital
+[ ] Schedule first check-in call with provider relationship manager
+```
+
+#### Step 15: First Month & Ongoing Management
+
+```
+FIRST MONTH POST-FUNDING
+
+Week 1 - Documentation:
+[ ] File all RBF agreements and documents securely
+[ ] Create backup copy in cloud storage
+[ ] Add repayment timeline to financial forecast
+[ ] Set up monthly tracking spreadsheet
+
+Week 2 - Deployment Planning:
+[ ] Create detailed deployment plan
+[ ] Assign owner to each use of funds category
+[ ] Set KPIs for measuring ROI
+[ ] Create monthly tracking dashboard
+
+Week 3 - First Payment Preparation:
+[ ] Verify first payment date
+[ ] Ensure sufficient funds for first payment
+[ ] Review payment calculation with accounting
+[ ] Confirm provider has correct bank details
+
+Week 4 - First Payment & Check-In:
+[ ] Monitor first ACH debit (confirm it posts correctly)
+[ ] Reconcile with provider (verify math)
+[ ] Schedule first monthly check-in with provider
+[ ] Begin tracking capital deployment progress
+
+ONGOING MONTHLY TASKS:
+[ ] Monitor revenue vs. projection
+[ ] Verify RBF payment ACH debit
+[ ] Update cash flow forecast
+[ ] Document capital deployment milestones
+[ ] Prepare monthly metrics for provider check-in
+[ ] Track ROI of deployed capital
+```
+
+---
+
 ## Messaging Templates
 
 ### Outreach to RBF Providers
@@ -2481,6 +3281,200 @@ Located in `/RBF_Application_Materials/Templates/`:
 - [ ] Reconciled RBF balance sheet
 - [ ] Documented deployment ROI
 - [ ] Maintained communication with provider
+
+---
+
+## RBF Eligibility Requirements & Pre-Application Checklist
+
+### Baseline Revenue Requirements by Provider
+
+| Provider | Minimum MRR | Minimum ARR | Best If | Check Mark |
+|----------|------------|-----------|--------|-----------|
+| **Kickdeck** | $500 | $6K | Earliest stage | ☐ |
+| **Creative Juice** | $2K | $24K | Creators | ☐ |
+| **Clearco** | $2K | $24K | Fast approval needed | ☐ |
+| **Credible** | $1K | $12K | Digital products | ☐ |
+| **Pipe** | $1K | $12K | SaaS/Recurring | ☐ |
+| **Lighter Capital** | $3K | $36K | Personalized support | ☐ |
+| **Rapid Finance** | $5K | $60K | E-commerce | ☐ |
+| **Wayflyer** | $5K | $60K | E-commerce global | ☐ |
+| **Founderpath** | $10K | $120K | SaaS (no PG) | ☐ |
+| **Settle** | $20K | $240K | Shopify/Amazon | ☐ |
+| **Capchase** | $10K ARR | $120K | Annual contracts | ☐ |
+| **Brex** | Varies | Varies | Existing Brex customer | ☐ |
+
+### Essential Eligibility Criteria (ALL Must Be Met)
+
+#### 1. Revenue Threshold
+- [ ] Current monthly recurring revenue (MRR) meets minimum for chosen provider(s)
+- [ ] Revenue source documented in business bank account (not personal)
+- [ ] Revenue has been consistent for last 3 months minimum
+- [ ] Demonstrated month-over-month growth or stability (no declining trend)
+
+#### 2. Business Structure & Documentation
+- [ ] Business is registered and legally formed (LLC, C-Corp, S-Corp, etc.)
+- [ ] Have valid government-issued ID (for founder/owner verification)
+- [ ] Business has active business bank account (separate from personal)
+- [ ] Tax returns filed for business (1040-C for solo, 1120 for Corp, 1065 for Partnership)
+- [ ] Have access to business accounting system (QuickBooks, Xero, Freshbooks, Wave, etc.)
+
+#### 3. Financial Records
+- [ ] 6 months of business bank statements available
+- [ ] 2 years of complete tax returns (personal + business)
+- [ ] Clear business P&L statement for last 12 months
+- [ ] Can access online banking to connect to provider's accounting integration
+- [ ] Revenue sources are clearly identifiable (Stripe, PayPal, Square, Shopify, etc.)
+
+#### 4. Business Metrics Quality
+- [ ] Customer acquisition cost (CAC) is documented
+- [ ] Customer lifetime value (LTV) is > 3x CAC
+- [ ] Monthly churn rate is < 10% (for recurring revenue)
+- [ ] Can demonstrate where capital will be deployed for ROI
+- [ ] Have financial projections for next 12 months
+
+#### 5. No Disqualifying Factors
+- [ ] No personal bankruptcy in last 7 years
+- [ ] No business bankruptcies or receiverships
+- [ ] No current litigation affecting business
+- [ ] No judgments or liens against business
+- [ ] No defaulted loans or unpaid tax obligations
+- [ ] No high-risk regulatory issues in industry
+
+### Revenue Growth & Stability Assessment
+
+Check your eligibility by revenue trajectory:
+
+#### Growth Pattern Assessment
+```
+Your Monthly Growth Rate:
+
+[ ] Growing 5-10% MoM
+    ✓ Good candidate. Proceed with applications.
+
+[ ] Growing 10-20% MoM
+    ✓ Excellent candidate. Multiple offers likely.
+
+[ ] Growing 20%+ MoM
+    ✓ Top-tier candidate. Highest approval odds.
+
+[ ] Stable (0-5% MoM)
+    ✓ Acceptable if MRR is 2-3x minimum. May get fewer offers.
+
+[ ] Declining (negative MoM)
+    ✗ Wait until growth resumes. Improve metrics 3-6 months before applying.
+```
+
+### Industry-Specific Eligibility Checklist
+
+#### SaaS/Subscription Software
+- [ ] Have signed customer contracts (or proof of recurring billing)
+- [ ] Monthly recurring revenue (MRR) is documented
+- [ ] Customer churn rate is < 7% monthly
+- [ ] Have clear financial model with unit economics
+- [ ] CAC payback period is < 12 months
+- [ ] Net revenue retention > 90% (ideal: >100%)
+- [ ] **Best Providers**: Pipe, Capchase, Founderpath, Lighter Capital
+
+#### E-Commerce/DTC
+- [ ] Monthly sales recorded in accounting system
+- [ ] Can demonstrate product-market fit (consistent repeat customers)
+- [ ] Customer acquisition channels are documented (Facebook Ads, Google Ads, etc.)
+- [ ] Inventory planning and cash flow forecasting in place
+- [ ] Understand unit economics (cost per acquisition, average order value)
+- [ ] **Best Providers**: Clearco, Wayflyer, Settle, Uncapped
+
+#### Creator Economy/Content
+- [ ] YouTube channel or content platform with minimum followers:
+  - YouTube: 100K+ subscribers
+  - TikTok: 500K+ followers
+  - Instagram: 250K+ followers
+  - Podcast: 10K+ monthly listeners
+- [ ] Have proven monetization (ad revenue, sponsorships, brand deals)
+- [ ] Analytics dashboard showing audience growth trends
+- [ ] **Best Providers**: Spotter, Karat Financial, Creative Juice
+
+#### B2B Services/Agencies
+- [ ] Have recurring revenue contracts or retainer clients
+- [ ] Clear documentation of services and pricing
+- [ ] Client contracts showing recurring fees
+- [ ] Demonstrated ability to deliver consistently
+- [ ] **Best Providers**: Lighter Capital, Founderpath, Pipe
+
+### Financial Health Red Flags (Avoid These)
+
+If any of these apply, you likely won't be approved:
+
+- [ ] Business less than 6 months old (most providers require 6+ months history)
+- [ ] Unsteady or declining revenue trend (3+ months)
+- [ ] Multiple hard credit pulls in last 90 days (signals desperation)
+- [ ] Overdue tax payments or IRS liens
+- [ ] Current personal or business bankruptcy
+- [ ] Revenue mostly from one customer (>60% concentration risk)
+- [ ] High-risk industry (illegal products, gambling, adult content)
+- [ ] Pending lawsuits or regulatory investigations
+- [ ] No clear business records or accounting system
+- [ ] Unable to explain how capital will generate ROI
+
+### Pre-Application Document Checklist
+
+Gather these documents BEFORE applying (saves time during underwriting):
+
+#### Critical Documents (Required by All Providers)
+- [ ] Personal government-issued ID (driver's license, passport)
+- [ ] Business Formation Documents (Articles of Incorporation/Operating Agreement)
+- [ ] Last 6 months of business bank statements (PDF or CSV)
+- [ ] Last 2 years of complete business tax returns (1120/1040-C/1065)
+- [ ] Personal tax returns for last 2 years (if business is young)
+- [ ] Current business P&L statement (YTD and last 12 months)
+- [ ] Current business balance sheet
+
+#### Supporting Documents (Requested During Underwriting)
+- [ ] 3 months of accounting system reports (Stripe, PayPal, Shopify, etc.)
+- [ ] Customer list or evidence of recurring customers
+- [ ] Marketing channel breakdown (% of revenue by source)
+- [ ] Contracts or agreements showing commitment (customer contracts, supplier contracts)
+- [ ] Cash flow projection for next 12 months
+- [ ] Detailed use-of-funds breakdown (how capital will be deployed)
+
+#### Optional Documents (Strengthen Application)
+- [ ] Company pitch deck
+- [ ] Letter of recommendation from advisor, investor, or mentor
+- [ ] Press coverage or awards
+- [ ] Third-party validation (Product Hunt, G2, Trust badges)
+- [ ] Screenshots of business metrics dashboard (revenue, growth, CAC, LTV)
+
+### Readiness Scoring System
+
+Rate yourself on each dimension (1-5 scale):
+
+```
+Your RBF Readiness Score
+
+1. Revenue Stability (Are your numbers predictable?)
+   Score: [ ] 1=Highly variable  5=Highly stable
+
+2. Documentation Quality (Are your records organized?)
+   Score: [ ] 1=Messy/scattered  5=Perfect/connected
+
+3. Growth Trajectory (Is your business growing?)
+   Score: [ ] 1=Declining  5=Hyper-growing (20%+ MoM)
+
+4. Financial Health (Strong cash flow and margins?)
+   Score: [ ] 1=Negative cash flow  5=Strongly positive
+
+5. Unit Economics (Healthy CAC/LTV and payback?)
+   Score: [ ] 1=Unclear/bad  5=Excellent, documented
+
+6. Business Metrics (Clear KPIs and dashboards?)
+   Score: [ ] 1=No clear metrics  5=Real-time visibility
+
+TOTAL SCORE: [ ] out of 30
+
+18-30: Excellent candidate, apply immediately
+15-18: Good candidate, improve 1-2 areas first
+12-15: Fair candidate, strengthen metrics before applying
+<12: Not ready, focus on metrics for 3-6 months
+```
 
 ---
 

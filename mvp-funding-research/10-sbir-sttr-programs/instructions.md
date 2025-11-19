@@ -119,6 +119,591 @@ The Small Business Innovation Research (SBIR) and Small Business Technology Tran
 
 ---
 
+## Section 1.2: SBIR/STTR Application Phases & Timeline
+
+### Visual: SBIR/STTR Application Process Flow
+
+```mermaid
+graph TD
+    A["Topic Released<br/>(Solicitation)"] --> B["Proposal Preparation<br/>(6-8 weeks)"]
+    B --> C["Proposal Submission<br/>(Deadline Day)"]
+    C --> D["Agency Evaluation<br/>(2-3 months)"]
+    D --> E["Preliminary Reviews<br/>& Scoring"]
+    E --> F{"Selection<br/>Decision"}
+    F -->|Funded| G["Award Notification<br/>(Phase I or II)"]
+    F -->|Not Funded| H["Request Feedback<br/>& Plan Resubmission"]
+    G --> I["Kick-off Meeting<br/>with Program Officer"]
+    I --> J["Project Execution<br/>(6-24 months)"]
+    J --> K["Quarterly Reports<br/>& Milestone Tracking"]
+    K --> L["Final Report &<br/>Deliverables"]
+    L --> M{"Phase II<br/>Eligible?"}
+    M -->|Yes| N["Phase II Proposal<br/>Submitted"]
+    M -->|No| O["Phase III Planning<br/>& Customer Development"]
+    N --> P["Phase II Award<br/>or Reapply"]
+    style A fill:#e1f5ff
+    style C fill:#fff3e0
+    style G fill:#c8e6c9
+    style J fill:#f3e5f5
+    style O fill:#c8e6c9
+```
+
+### Visual: Phase I vs Phase II Comparison
+
+```mermaid
+graph LR
+    subgraph "Phase I: Feasibility"
+        A1["Duration: 6 months"]
+        A2["Budget: $50K-$250K"]
+        A3["Goal: Prove feasibility"]
+        A4["Output: Research report"]
+    end
+
+    subgraph "Phase II: Development"
+        B1["Duration: 24 months"]
+        B2["Budget: $750K-$2M"]
+        B3["Goal: Build prototype/MVP"]
+        B4["Output: Working product + plan"]
+    end
+
+    subgraph "Phase III: Commercialization"
+        C1["Duration: Variable"]
+        C2["Funding: Production contracts"]
+        C3["Goal: Market & sell solution"]
+        C4["Output: Commercial revenue"]
+    end
+
+    A4 --> B1
+    B4 --> C1
+
+    style A1 fill:#bbdefb
+    style B1 fill:#a5d6a7
+    style C1 fill:#ffccbc
+```
+
+### SBIR/STTR Agency Selection Matrix
+
+| Agency | Phase I Budget | Phase II Budget | Success Rate* | Best For |
+|--------|---|---|---|---|
+| **DoD** | $150K-$250K | $1.0M-$2.0M | 10-12% | Defense, cybersecurity, AI/ML, autonomy |
+| **NIH** | $150K-$225K | $750K-$1.5M | 12-15% | Medical devices, biotech, digital health |
+| **NSF** | $175K-$225K | $750K-$1.0M | 8-10% | Deep tech, quantum, clean energy, manufacturing |
+| **DOE** | $150K-$225K | $750K-$1.5M | 10-12% | Energy storage, nuclear, carbon capture, grid |
+| **NASA** | $150K-$225K | $750K-$1.5M | 8-10% | Space tech, earth science, materials, aeronautics |
+| **NIST** | $150K-$225K | $750K-$1.5M | 12-14% | Advanced manufacturing, cybersecurity, standards |
+| **EPA** | $100K-$200K | $600K-$1.2M | 9-11% | Clean water, air quality, environmental monitoring |
+| **DOT** | $100K-$200K | $600K-$1.2M | 8-10% | Autonomous vehicles, infrastructure, safety |
+| **ED** | $150K-$225K | $600K-$1.0M | 10-12% | EdTech, learning tech, assessment tools |
+| **USDA** | $100K-$175K | $500K-$1.0M | 9-11% | AgTech, food safety, rural development |
+
+*Success rate varies by topic and year; these are approximate national averages
+
+---
+
+## Section 1.3: SBIR Application Timeline & Cycles
+
+### Typical Annual SBIR/STTR Timeline
+
+```mermaid
+timeline
+    title Annual SBIR/STTR Submission Timeline (Most Common Pattern)
+
+    section Fiscal Year
+        Jan - Feb : Agencies release Phase II solicitations for prior FY winners
+        Mar - Apr : Phase II proposals due (winners from previous Phase I)
+        Apr - May : Agencies release Phase I solicitations for next FY
+        Jun - Jul : Phase I proposals due for upcoming FY
+        Jul - Aug : Internal agency evaluation begins
+        Aug - Sep : Preliminary reviews completed
+        Oct - Nov : Final selections made and announced
+        Dec - Jan : Awards issued, contracts executed
+        Feb : Phase I projects kick off
+        Mar - Aug : Phase I project execution (6 months)
+        Sep - Oct : Phase I reports & Phase II proposals due
+        Nov - Dec : Phase II awards announced
+        Jan : Phase II projects kick off
+```
+
+### Agency-Specific Solicitation Cycles
+
+**DoD (Department of Defense)**
+- Phase I Release: March-April (fiscal year prep)
+- Phase I Deadline: May-June
+- Phase II Deadline: September-October
+- Award Timeline: 4-6 months after submission
+- Multiple topics (100+): DoD has the most diverse SBIR topics
+
+**NIH (National Institutes of Health)**
+- Release Schedule: Typically 2-3 times per year
+- Phase I Deadlines: Standard submission dates (varies)
+- Phase II Deadlines: Same schedule as Phase I
+- Award Timeline: 6-8 months after submission
+- Multiple NIH institutes participate: NCI, NIDDK, NIAID, etc.
+
+**NSF (National Science Foundation)**
+- Phase I Release: Typically March
+- Phase I Deadline: June
+- Phase II Deadline: September
+- Award Timeline: 4-6 months
+- More streamlined single-track process
+
+**NASA**
+- Phase I Release: August-September
+- Phase I Deadline: October-November
+- Phase II Deadline: February
+- Award Timeline: 4-6 months
+- Limited number of topics (15-20 per cycle)
+
+**DOE (Department of Energy)**
+- Multiple solicitations per year
+- Deadlines vary by program
+- Award Timeline: 4-6 months
+- Coordinated with agency priorities
+
+### Important: Submission Deadlines Are FIXED
+
+```mermaid
+gantt
+    title Proposal Preparation Timeline (Typical 8-Week Cycle)
+    dateFormat YYYY-MM-DD
+
+    section Preparation
+    Topic Selection & Analysis :topic, 2024-01-01, 7d
+    Customer Discovery & Validation :custdev, after topic, 14d
+    Technical Approach Development :technical, after custdev, 14d
+    Budget Development & Cost Analysis :budget, after technical, 7d
+    Proposal Writing - Narrative :writing, after budget, 14d
+    Internal Review & Feedback :review, after writing, 7d
+    Final Edits & Submission Prep :final, after review, 7d
+    Submit Before Deadline :submit, after final, 1d
+
+    section Key Milestones
+    Solicitation Released :crit, milestone, 2024-01-01, 1d
+    Deadline Day :crit, milestone, 2024-02-25, 1d
+```
+
+---
+
+## Section 1.4: Comprehensive SBIR.gov Resources & Portals
+
+### Primary SBIR.gov Resources
+
+#### **SBIR.gov - The Central Hub**
+- **Main Portal:** https://www.sbir.gov/
+- **Award Search Database:** https://www.sbir.gov/sbirsearch/
+  - Search past awards by agency, technology area, company, funding amount
+  - Find winning proposals and learn from successful competitors
+  - Identify which agencies fund your technology area
+  - Research who is winning similar contracts
+- **Solicitations Portal:** https://www.sbir.gov/solicitations
+  - View all active and upcoming solicitations
+  - Subscribe to notifications for specific agencies
+  - Download solicitation documents
+- **FAQs & Guides:** https://www.sbir.gov/faqs
+- **Success Stories:** https://www.sbir.gov/success-stories
+- **Technical Assistance:** https://www.sbir.gov/general-contacts
+
+### Agency-Specific Application Portals
+
+#### **DoD SBIR Portal**
+- **Main URL:** https://www.defensebusinesssolutions.com/sbir/
+- **Portal Features:**
+  - Register as DoD contractor
+  - Submit SBIR Phase I & II proposals
+  - Access solicitation topics (100+ topics per year)
+  - View evaluation criteria
+  - Track proposal status
+- **Key Contact:** DoD SBIR Program Manager: sbir@mail.dod.mil
+- **Related:** https://www.defense.gov/Newsroom/Releases/ (for program updates)
+
+#### **NIH SBIR Portal**
+- **Main URL:** https://sbir.nih.gov/
+- **Portal Features:**
+  - Topic search by institute/center
+  - Proposal submission system
+  - Access to all NIH SBIR solicitations
+  - Links to specific NIH institute programs
+- **Key Institutes:**
+  - National Cancer Institute (NCI): https://sbir.nih.gov/
+  - National Heart, Lung, and Blood Institute (NHLBI)
+  - National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)
+  - National Institute of Allergy and Infectious Diseases (NIAID)
+- **Contact:** nihsbir@mail.nih.gov
+
+#### **NSF SBIR/STTR Portal**
+- **Main URL:** https://seedfund.nsf.gov/
+- **Portal Features:**
+  - Topic areas and eligibility information
+  - Detailed solicitation documents
+  - Previous awardees and success metrics
+  - Application portal access
+- **Key Areas:** Deep Tech, Clean Energy, Advanced Manufacturing, Quantum
+- **Contact:** sbir@nsf.gov
+
+#### **NASA SBIR/STTR Portal**
+- **Main URL:** https://sbir.nasa.gov/
+- **Portal Features:**
+  - Mission-specific topic areas
+  - Proposal submission platform
+  - Phase I & II application guidelines
+  - Technical point of contact for each topic
+- **Key Topics:** Aeronautics, Space Exploration, Earth Science, Materials Science
+- **Contact:** sbir@nasa.gov
+
+#### **DOE SBIR/STTR Portal**
+- **Main URL:** https://science.osti.gov/sbir/
+- **Portal Features:**
+  - Topics aligned with DOE program offices
+  - Full solicitation documents
+  - Application system
+  - Technical contacts for questions
+- **Key Focus Areas:** Energy Storage, Grid Modernization, Nuclear, Carbon Capture
+- **Contact:** SBIR@science.osti.gov
+
+#### **EPA SBIR/STTR Portal**
+- **Main URL:** https://www.epa.gov/sbir/
+- **Portal Features:**
+  - Environmental technology topics
+  - Small business resources
+  - Training and webinars
+  - Performance metrics
+- **Key Areas:** Clean Water, Air Quality, Waste Management, Environmental Monitoring
+- **Contact:** sbir@epa.gov
+
+#### **NIST SBIR/STTR Portal**
+- **Main URL:** https://www.nist.gov/tpo/sbir-sttr-funding-opportunities
+- **Portal Features:**
+  - Advanced manufacturing topics
+  - Cybersecurity-related research
+  - Measurement science topics
+  - Technical assistance resources
+- **Contact:** sbir@nist.gov
+
+#### **DOT SBIR/STTR Portal**
+- **Main URL:** https://www.transportation.gov/grants
+- **Portal Features:**
+  - Transportation technology topics
+  - ITS (Intelligent Transportation Systems) focus
+  - Autonomous vehicle research
+- **Contact:** https://www.transportation.gov/contacts
+
+### Federal Registration & Submission Systems
+
+#### **SAM.gov (System for Award Management)**
+- **Website:** https://sam.gov/
+- **Purpose:** Register your business to receive federal funding
+- **Registration Steps:**
+  1. Get DUNS Number (now UEI - Unique Entity Identifier)
+  2. Create SAM.gov account
+  3. Register your entity
+  4. Maintain active registration annually
+- **Processing Time:** 3-10 business days
+- **Critical:** Must be active BEFORE submitting proposals
+
+#### **Grants.gov**
+- **Website:** https://www.grants.gov/
+- **Purpose:** Central portal for federal grant opportunities
+- **Role in SBIR:** Some agencies use this for solicitations
+- **Registration:** Dependent on SAM.gov registration
+- **Account Setup:**
+  1. Create organizational account
+  2. Designate Authorized Organization Representative (AOR)
+  3. Set up authorized users
+  4. Grant submission permissions
+
+#### **Agency-Specific Submission Systems**
+
+**DoD SBIR - Defense Business Solutions**
+- **Portal:** https://www.defensebusinesssolutions.com/sbir/
+- **Registration:** Must register as federal contractor in SAM.gov first
+- **Submission:** Upload PDF proposals to secure portal
+- **Tracking:** Real-time status updates
+
+**NIH SBIR - eRA Commons / Research.gov**
+- **Portal:** https://era.nih.gov/ (eRA Commons login)
+- **Submission:** Electronic submission to grants.nih.gov
+- **Account:** NIH eRA Commons account required
+
+**NSF SBIR - FastLane / Research.gov**
+- **Portal:** https://www.research.gov/
+- **Submission:** Electronic proposal submission system
+- **Account:** NSF account with principal investigator credentials
+
+**NASA SBIR - NSPIRES**
+- **Portal:** https://nspires.nasaprs.com/
+- **Submission:** Proposal upload to secure NASA portal
+- **Account:** NASA NSPIRES registration
+
+**DOE SBIR - Grants.gov**
+- **Portal:** https://www.grants.gov/
+- **Submission:** Use Grants.gov system for most DOE solicitations
+- **Account:** Grants.gov and SAM.gov accounts required
+
+### Supporting Resources & Tools
+
+#### **SBIR Data & Analytics**
+- **SBIR Awards Database:** https://www.sbir.gov/sbirsearch/
+- **SBA SBIR/STTR Database:** https://data.sba.gov/
+- **USAspending.gov:** https://www.usaspending.gov/ (federal spending data)
+
+#### **Small Business Administration (SBA)**
+- **Main Website:** https://www.sba.gov/
+- **SBIR/STTR Page:** https://www.sba.gov/sbir/
+- **Training & Webinars:** https://www.sba.gov/sbir/training
+- **Local SBA Office Locator:** https://www.sba.gov/offices/
+- **SBIR/STTR Mentorship Programs:** https://www.sba.gov/sbir/mentorship
+
+#### **Technical Assistance Resources**
+- **SBIR/STTR Training:** https://www.sbir.gov/general-contacts
+- **Agency Webinars:** Each agency hosts monthly webinars (check their websites)
+- **One-on-One Counseling:** Most SBA Field Offices offer free SBIR consulting
+- **Business Training:** SBA offers free SCORE mentoring
+
+---
+
+## Section 1.5: Step-by-Step SBIR Application Preparation Guide
+
+### Pre-Submission Preparation (8-12 weeks before deadline)
+
+#### **Phase 1: Strategic Assessment (Weeks 1-2)**
+
+**Step 1.1: Verify Company Eligibility**
+```
+Checklist:
+□ Company is U.S. for-profit (C-Corp, S-Corp, or LLC taxed as corporation)
+□ Company has fewer than 500 employees
+□ Company is more than 50% owned/controlled by U.S. citizens or permanent residents
+□ Primary place of business is in the United States
+□ Apply before exceeding 500 employees or changing ownership
+□ Company passes SAM.gov affiliation test
+□ Company is not majority-owned by large corporation
+```
+
+**Step 1.2: Assess Technology Fit with Agencies**
+- [ ] Review SBIR.gov topic list for next solicitation round
+- [ ] Identify agencies where technology aligns (minimum 3, ideal 4-5)
+- [ ] Review past awards in similar technology areas
+- [ ] Check success rates by agency
+- [ ] Prioritize agencies by fit and funding amounts
+- [ ] Create target agency matrix
+
+**Step 1.3: Determine Phase I vs Phase II Eligibility**
+- [ ] Have you received Phase I funding in past 5 years? (Phase II eligibility depends on this)
+- [ ] Have you completed Phase I deliverables? (required for Phase II)
+- [ ] Is your company still small business size? (required for both)
+- [ ] Confirm Phase I or Phase II eligibility window
+
+#### **Phase 2: Customer Validation (Weeks 2-6)**
+
+**Step 2.1: Identify Target Customers**
+- [ ] Define specific government agencies or users who need the solution
+- [ ] Identify 5+ potential customer organizations
+- [ ] Document exact problem/pain point they face
+- [ ] Estimate addressable market size (total agencies, contractors, users)
+- [ ] Create customer persona document
+
+**Step 2.2: Conduct Customer Discovery Interviews**
+- [ ] Schedule 10-15 customer conversations
+- [ ] Ask about current solutions and limitations
+- [ ] Validate problem importance (on scale 1-10)
+- [ ] Explore budget/procurement process
+- [ ] Identify buying authority (who makes purchase decision)
+- [ ] Document feedback in interview notes
+
+**Step 2.3: Build Evidence of Need**
+- [ ] Collect quotes from customers ("This is our biggest challenge...")
+- [ ] Document market size data from government reports
+- [ ] Gather competitive landscape analysis
+- [ ] Create letters of support from potential customers (optional but powerful)
+- [ ] Compile market validation summary document
+
+#### **Phase 3: Technical Approach Development (Weeks 5-7)**
+
+**Step 3.1: Define Technical Approach**
+- [ ] Outline proposed solution architecture
+- [ ] Identify key technical risks and mitigation strategies
+- [ ] Break down into Phase I milestones (6 tasks minimum)
+- [ ] Define Phase I deliverables (reports, prototypes, tests)
+- [ ] Create technical timeline/Gantt chart
+- [ ] Identify necessary technical resources/tools
+
+**Step 3.2: Demonstrate Innovation**
+- [ ] Identify what's novel about approach (new algorithm? combination? application?)
+- [ ] Compare to existing solutions (why better?)
+- [ ] Highlight intellectual property considerations (patents, trade secrets)
+- [ ] Document preliminary data or proof-of-concept results
+- [ ] Explain technology transition risk and mitigation
+
+**Step 3.3: Assemble Technical Team**
+- [ ] Identify Principal Investigator (must be primarily employed by company)
+- [ ] Identify key technical personnel (resumes required)
+- [ ] Document relevant past experience and publications
+- [ ] For STTR: Identify research institution partner and key researchers
+- [ ] Create organizational chart showing roles and responsibilities
+
+#### **Phase 4: Budget Development (Weeks 6-7)**
+
+**Step 4.1: Estimate Costs**
+- [ ] Break down Phase I budget by labor, materials, subcontracts, travel, other
+- [ ] Document hourly rates or salaries for team members
+- [ ] Estimate material/equipment costs (get quotes)
+- [ ] Plan for subcontractor or consultant costs if needed
+- [ ] Include travel for customer discovery/validation
+- [ ] Calculate total Phase I budget request
+
+**Step 4.2: Create Detailed Budget Narrative**
+- [ ] Explain each line item cost
+- [ ] Justify personnel time allocations
+- [ ] Provide quotes for major equipment/materials
+- [ ] Explain subcontractor roles and rates
+- [ ] Show how budget supports Phase I milestones
+- [ ] Ensure costs are reasonable and allocable to project
+
+**Step 4.3: Develop Phase II Budget Projection**
+- [ ] Estimate Phase II funding needs (typically $750K-$2M)
+- [ ] Outline Phase II work scope and timeline
+- [ ] Justify larger Phase II budget based on Phase I results
+- [ ] Show how Phase II will move toward Phase III commercialization
+
+#### **Phase 5: Proposal Development (Weeks 7-8)**
+
+**Step 5.1: Create Proposal Narrative**
+- [ ] **Cover Page & Executive Summary (1 page)**
+  - Problem statement
+  - Proposed solution
+  - Anticipated benefits
+  - Phase I deliverables
+
+- [ ] **Significance of Problem (2-3 pages)**
+  - Why the problem matters (use customer quotes and data)
+  - Market size and growth potential
+  - Current limitations of existing solutions
+  - Impact of solving this problem
+
+- [ ] **Technical Approach (3-5 pages)**
+  - Proposed solution design
+  - Key technical innovations
+  - Phase I milestones and timeline
+  - Risk assessment and mitigation
+  - Phase I deliverables
+
+- [ ] **Prior Experience & Qualifications (2 pages)**
+  - Team member bios and relevant experience
+  - Prior related work and publications
+  - Why team is equipped for this project
+  - For STTR: Research institution partner expertise
+
+- [ ] **Phase II & Phase III Plan (2 pages)**
+  - Path to Phase II funding
+  - Commercialization strategy
+  - Target customers and market
+  - Revenue/impact projections
+
+- [ ] **Supporting Data & References (1-2 pages)**
+  - Literature citations
+  - Customer quotes and letters of support
+  - Market research data
+  - Relevant publications/patents
+
+**Step 5.2: Follow Agency-Specific Format Requirements**
+- [ ] Check solicitation for page limits (typically 15-25 pages)
+- [ ] Verify font requirements (usually 12pt, standard fonts)
+- [ ] Confirm margin requirements (typically 1 inch)
+- [ ] Follow section organization specified in solicitation
+- [ ] Include all required appendices/attachments
+- [ ] Verify PDF formatting for submission
+
+#### **Phase 6: Internal Review & Revision (Week 8)**
+
+**Step 6.1: Self-Review**
+- [ ] Read proposal from perspective of independent evaluator
+- [ ] Check that every section directly supports funding request
+- [ ] Verify claims are backed by evidence (quotes, data, references)
+- [ ] Ensure technical approach is feasible and clearly explained
+- [ ] Confirm Phase I work is distinct from Phase II
+- [ ] Verify commercialization plan is realistic
+
+**Step 6.2: External Review**
+- [ ] Have colleague/advisor review for clarity and logic
+- [ ] Have technical expert review for feasibility
+- [ ] Have business person review for commercial viability
+- [ ] Have program officer review for alignment with topic (optional but valuable)
+- [ ] Collect feedback and prioritize revisions
+- [ ] Track all reviewer comments and your responses
+
+**Step 6.3: Revision & Refinement**
+- [ ] Address reviewer feedback
+- [ ] Tighten narrative and eliminate wordiness
+- [ ] Strengthen weak sections with more evidence/detail
+- [ ] Simplify technical explanations without losing substance
+- [ ] Verify consistency across all sections
+- [ ] Create final clean version for submission
+
+#### **Phase 7: Final Submission Preparation (1-2 days before deadline)**
+
+**Step 7.1: Complete Administrative Requirements**
+- [ ] Verify SAM.gov registration is active
+- [ ] Verify company information is current in SAM.gov
+- [ ] Set up Grants.gov or agency-specific portal account
+- [ ] Assign Authorized Organization Representative (AOR) for submission
+- [ ] Confirm submission authority has access to portal
+- [ ] Register with agency-specific submission system if required
+
+**Step 7.2: Prepare Supporting Documents**
+- [ ] Compile all required attachments (resumes, org charts, budget spreadsheets)
+- [ ] Create supporting letters (letters of support from customers if applicable)
+- [ ] Prepare corporate documentation (articles of incorporation, proof of U.S. ownership)
+- [ ] Compile proof of small business status if requested
+- [ ] Create PDF package of all documents
+- [ ] Verify all PDFs are readable and properly formatted
+
+**Step 7.3: Final Submission**
+- [ ] Test submission system with dummy upload (if available)
+- [ ] Verify all required fields are filled in correctly
+- [ ] Double-check proposal PDF for completeness
+- [ ] Submit proposal with 1-2 hours before deadline (NOT at last minute)
+- [ ] Save confirmation receipt/reference number
+- [ ] Document submission time and portal confirmation
+- [ ] Send thank-you email to program officer (if contact established)
+
+### Post-Submission (After deadline)
+
+**Step 8.1: Track Proposal Status**
+- [ ] Monitor proposal through agency system
+- [ ] Note evaluation milestones and feedback opportunities
+- [ ] Prepare for potential reviewer questions
+- [ ] If rejected: Request feedback and plan resubmission
+
+**Step 8.2: Plan Next Steps**
+- [ ] If Phase I awarded: Prepare for kick-off meeting
+- [ ] If rejected: Analyze feedback and improve proposal
+- [ ] Plan Phase II proposal if Phase I successful
+- [ ] Continue customer development regardless of Phase I outcome
+
+### Common Preparation Mistakes to Avoid
+
+```mermaid
+graph TD
+    A["SBIR Proposal Preparation"] --> B["Mistake 1: Weak Customer Validation"]
+    A --> C["Mistake 2: Insufficient Technical Detail"]
+    A --> D["Mistake 3: Unrealistic Budget/Timeline"]
+    A --> E["Mistake 4: Poor Phase III Planning"]
+    A --> F["Mistake 5: Missing Deadline"]
+
+    B --> B1["Fix: Conduct 10+ customer interviews<br/>Get explicit quotes about need<br/>Include letters of support"]
+    C --> C1["Fix: Show technical approach<br/>Detail Phase I milestones<br/>Address technical risks"]
+    D --> D1["Fix: Get cost quotes<br/>Break down budget by task<br/>Justify Phase I scope"]
+    E --> E1["Fix: Define customer base<br/>Show commercialization path<br/>Include revenue projections"]
+    F --> F1["Fix: Submit 2+ hours before deadline<br/>Test submission system early<br/>Have contingency plan"]
+
+    style B1 fill:#c8e6c9
+    style C1 fill:#c8e6c9
+    style D1 fill:#c8e6c9
+    style E1 fill:#c8e6c9
+    style F1 fill:#c8e6c9
+```
+
+---
+
 ## Section 1.5: Detailed Eligibility Criteria
 
 ### Company Eligibility Requirements
